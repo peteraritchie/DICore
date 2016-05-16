@@ -12,7 +12,7 @@ assembly_info:
 build:
   verbosity: minimal
 after_build:
-- cmd: >-
+- ps: >-
     nuget.exe pack .\PRI.DICore\PRI.DICore.csproj -Prop Configuration=Release -Symbols -version $env:APPVEYOR_BUILD_VERSION
 
     nuget.exe pack .\PRI.DICore.SystemNetHttp\PRI.DICore.SystemNetHttp.csproj -Prop Configuration=Release -Symbols -version $env:APPVEYOR_BUILD_VERSION
