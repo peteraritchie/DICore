@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PRI.DICore</id>
+    <version>$version$</version>
+    <authors>Peter Ritchie</authors>
+    <owners>Peter Ritchie</owners>
+    <licenseUrl>https://github.com/peteraritchie/DICore/raw/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/peteraritchie/DICore</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A library to facilitate Dependency Inversion</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>dependency inversion</tags>
+  </metadata>
+</package>

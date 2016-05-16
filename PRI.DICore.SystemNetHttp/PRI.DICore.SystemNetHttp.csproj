@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E35B2D46-3B13-4C0D-A3EC-6B61FA62B472}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PRI.DICore.SystemNetHttp</RootNamespace>
+    <AssemblyName>PRI.DICore.SystemNetHttp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthenticationHeaderValue.cs" />
+    <Compile Include="CacheControlHeaderValue.cs" />
+    <Compile Include="ContentDispositionHeaderValue.cs" />
+    <Compile Include="ContentRangeHeaderValue.cs" />
+    <Compile Include="EntityTagHeaderValue.cs" />
+    <Compile Include="HttpClient.cs" />
+    <Compile Include="HttpClientHandler.cs" />
+    <Compile Include="HttpContentHeaders.cs" />
+    <Compile Include="HttpMessageInvoker.cs" />
+    <Compile Include="HttpMethod.cs" />
+    <Compile Include="HttpRequestHeaders.cs" />
+    <Compile Include="HttpRequestMessage.cs" />
+    <Compile Include="HttpResponseHeaders.cs" />
+    <Compile Include="HttpResponseMessage.cs" />
+    <Compile Include="IAuthenticationHeaderValue.cs" />
+    <Compile Include="ICacheControlHeaderValue.cs" />
+    <Compile Include="IContentDispositionHeaderValue.cs" />
+    <Compile Include="IContentRangeHeaderValue.cs" />
+    <Compile Include="IEntityTagHeaderValue.cs" />
+    <Compile Include="IHttpClient.cs" />
+    <Compile Include="IHttpClientHandler.cs" />
+    <Compile Include="IHttpContentHeaders.cs" />
+    <Compile Include="IHttpMessageInvoker.cs" />
+    <Compile Include="IHttpMethod.cs" />
+    <Compile Include="IHttpRequestHeaders.cs" />
+    <Compile Include="IHttpRequestMessage.cs" />
+    <Compile Include="IHttpResponseHeaders.cs" />
+    <Compile Include="IHttpResponseMessage.cs" />
+    <Compile Include="IMediaTypeHeaderValue.cs" />
+    <Compile Include="IMediaTypeWithQualityHeaderValue.cs" />
+    <Compile Include="IMultipartFormDataContent.cs" />
+    <Compile Include="INameValueHeaderValue.cs" />
+    <Compile Include="INameValueWithParametersHeaderValue.cs" />
+    <Compile Include="IProductHeaderValue.cs" />
+    <Compile Include="IProductInfoHeaderValue.cs" />
+    <Compile Include="IRangeConditionHeaderValue.cs" />
+    <Compile Include="IRangeHeaderValue.cs" />
+    <Compile Include="IRangeItemHeaderValue.cs" />
+    <Compile Include="IRetryConditionHeaderValue.cs" />
+    <Compile Include="IStringWithQualityHeaderValue.cs" />
+    <Compile Include="ITransferCodingHeaderValue.cs" />
+    <Compile Include="ITransferCodingWithQualityHeaderValue.cs" />
+    <Compile Include="IViaHeaderValue.cs" />
+    <Compile Include="IWarningHeaderValue.cs" />
+    <Compile Include="MediaTypeHeaderValue.cs" />
+    <Compile Include="MediaTypeWithQualityHeaderValue.cs" />
+    <Compile Include="MultipartFormDataContent.cs" />
+    <Compile Include="NameValueHeaderValue.cs" />
+    <Compile Include="NameValueWithParametersHeaderValue.cs" />
+    <Compile Include="ProductHeaderValue.cs" />
+    <Compile Include="ProductInfoHeaderValue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RangeConditionHeaderValue.cs" />
+    <Compile Include="RangeHeaderValue.cs" />
+    <Compile Include="RangeItemHeaderValue.cs" />
+    <Compile Include="RetryConditionHeaderValue.cs" />
+    <Compile Include="StringWithQualityHeaderValue.cs" />
+    <Compile Include="TransferCodingHeaderValue.cs" />
+    <Compile Include="TransferCodingWithQualityHeaderValue.cs" />
+    <Compile Include="ViaHeaderValue.cs" />
+    <Compile Include="WarningHeaderValue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="PRI.DICore.nuspec" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

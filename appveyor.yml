@@ -1,0 +1,28 @@
+version: 0.1.{build}
+branches:
+  only:
+  - master
+configuration: Release
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+build:
+  verbosity: minimal
+after_build:
+- cmd: >-
+    nuget.exe pack .\PRI.DICore\PRI.CICore.csproj -Prop Configuration=Release -Symbols -version $env:APPVEYOR_BUILD_VERSION
+
+    nuget.exe pack .\PRI.DICore.SystemNetHttp\PRI.CICore.SystemNetHttp.csproj -Prop Configuration=Release -Symbols -version $env:APPVEYOR_BUILD_VERSION
+artifacts:
+- path: PRI.DICore.SystemNetHttp.nupkg
+  name: SystemNetHttp_nuget
+- path: PRI.DICore.nupkg
+  name: Core_nuget
+deploy:
+- provider: NuGet
+  api_key:
+    secure: K+dA1tJ3qNFfJ6G484VCFE9igeHb/BGa6tdJVKcaxvHYK6rwPsKrO/c5EahHvxsP
+  artifact: SystemNetHttp_nuget Core_nuget

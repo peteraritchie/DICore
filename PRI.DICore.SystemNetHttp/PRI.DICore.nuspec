@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PRI.DICore.SystemNetHttp</id>
+    <version>$version$</version>
+    <authors>Peter Ritchie</authors>
+    <owners>Peter Ritchie</owners>
+    <licenseUrl>https://github.com/peteraritchie/DICore/raw/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/peteraritchie/DICore</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A library to facilitate Dependency Inversion with System.Net.Http</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>dependency inversion system.net.http</tags>
+  </metadata>
+</package>
