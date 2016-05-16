@@ -13,9 +13,9 @@ build:
   verbosity: minimal
 after_build:
 - cmd: >-
-    nuget.exe pack .\PRI.DICore\PRI.CICore.csproj -Prop Configuration=Release -Symbols -version $env:APPVEYOR_BUILD_VERSION
+    nuget.exe pack .\PRI.DICore\PRI.DICore.csproj -Prop Configuration=Release -Symbols -version $env:APPVEYOR_BUILD_VERSION
 
-    nuget.exe pack .\PRI.DICore.SystemNetHttp\PRI.CICore.SystemNetHttp.csproj -Prop Configuration=Release -Symbols -version $env:APPVEYOR_BUILD_VERSION
+    nuget.exe pack .\PRI.DICore.SystemNetHttp\PRI.DICore.SystemNetHttp.csproj -Prop Configuration=Release -Symbols -version $env:APPVEYOR_BUILD_VERSION
 artifacts:
 - path: PRI.DICore.SystemNetHttp.nupkg
   name: SystemNetHttp_nuget
