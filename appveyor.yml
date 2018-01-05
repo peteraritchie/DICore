@@ -3,7 +3,7 @@ image: Visual Studio 2017
 configuration: Release
 nuget:
   project_feed: true
-  disable_publish_on_pr: true
+  disable_publish_on_pr: false
 build_script:
 - ps: >-
     if($env:APPVEYOR_BUILD_VERSION -match "(\d+\.\d+\.\d+)(.*)") {
