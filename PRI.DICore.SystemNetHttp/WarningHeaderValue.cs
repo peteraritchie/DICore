@@ -99,13 +99,5 @@ namespace PRI.DICore.SystemNetHttp
         {
             return this.containedObject.GetHashCode();
         }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.WarningHeaderValue.System.ICloneable.Clone"/>
-        /// </summary>
-        object System.ICloneable.Clone()
-        {
-            return ((System.ICloneable)(this.containedObject)).Clone();
-        }
     }
 }

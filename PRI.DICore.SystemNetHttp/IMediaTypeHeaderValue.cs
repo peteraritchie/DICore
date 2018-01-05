@@ -18,10 +18,13 @@ namespace PRI.DICore.SystemNetHttp
     /// <summary>
     /// An interface to model an abstraction of <see cref="System.Net.Http.Headers.MediaTypeHeaderValue" />
     /// </summary>
-    public interface IMediaTypeHeaderValue : System.ICloneable
-    {
-        
-        string CharSet
+    public interface IMediaTypeHeaderValue
+#if !NETSTANDARD1_0 && !NETSTANDARD1_1 && !NETSTANDARD1_2 && !NETSTANDARD1_3 && !NETSTANDARD1_4 && !NETSTANDARD1_5 && !NETSTANDARD1_6
+        : System.ICloneable
+#endif
+	{
+
+		string CharSet
         {
             get;
             set;

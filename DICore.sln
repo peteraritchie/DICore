@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRI.DICore", "PRI.DICore\PRI.DICore.csproj", "{2D4FB065-15F8-4ABF-A6F4-E672756EDA65}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other", "Other", "{44E5E892-06F8-491F-8D09-71A503E1B0E3}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
@@ -14,7 +12,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other", "Other", "{44E5E892
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRI.DICore.SystemNetHttp", "PRI.DICore.SystemNetHttp\PRI.DICore.SystemNetHttp.csproj", "{E35B2D46-3B13-4C0D-A3EC-6B61FA62B472}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PRI.DICore.SystemNetHttp.standard", "PRI.DICore.SystemNetHttp\PRI.DICore.SystemNetHttp.standard.csproj", "{85218E8F-B2EE-4203-964E-D63E94448F9F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PRI.DICore.standard", "PRI.DICore\PRI.DICore.standard.csproj", "{50658EF4-BBE6-4CD8-B46C-33A914D40642}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8A2F15FB-A1F1-4A7A-888C-81BA5095DD5E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,16 +27,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2D4FB065-15F8-4ABF-A6F4-E672756EDA65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D4FB065-15F8-4ABF-A6F4-E672756EDA65}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D4FB065-15F8-4ABF-A6F4-E672756EDA65}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D4FB065-15F8-4ABF-A6F4-E672756EDA65}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E35B2D46-3B13-4C0D-A3EC-6B61FA62B472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E35B2D46-3B13-4C0D-A3EC-6B61FA62B472}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E35B2D46-3B13-4C0D-A3EC-6B61FA62B472}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E35B2D46-3B13-4C0D-A3EC-6B61FA62B472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85218E8F-B2EE-4203-964E-D63E94448F9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85218E8F-B2EE-4203-964E-D63E94448F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85218E8F-B2EE-4203-964E-D63E94448F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85218E8F-B2EE-4203-964E-D63E94448F9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50658EF4-BBE6-4CD8-B46C-33A914D40642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50658EF4-BBE6-4CD8-B46C-33A914D40642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50658EF4-BBE6-4CD8-B46C-33A914D40642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50658EF4-BBE6-4CD8-B46C-33A914D40642}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CE7680B-7EB7-419D-9418-0662EC4982AC}
 	EndGlobalSection
 EndGlobal

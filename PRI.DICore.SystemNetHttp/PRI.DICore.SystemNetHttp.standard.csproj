@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+      <PackageId>PRI.DICore.SystemNetHttp</PackageId>
+      <Authors>Peter Ritchie</Authors>
+      <Description>A library to facilitate Dependency Inversion with System.Net.Http</Description>
+      <Company />
+      <Product>DI Core</Product>
+      <Copyright>Copyright 2018</Copyright>
+      <PackageLicenseUrl>https://github.com/peteraritchie/DICore/raw/master/LICENSE</PackageLicenseUrl>
+      <PackageProjectUrl>https://github.com/peteraritchie/DICore</PackageProjectUrl>
+      <PackageReleaseNotes>Support for .NET Standard</PackageReleaseNotes>
+      <PackageTags>dependency inversion system.net.http</PackageTags>
+      <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AuthenticationHeaderValue.Clone.cs" />
+    <Compile Remove="CacheControlHeaderValue.Clone.cs" />
+    <Compile Remove="ContentDispositionHeaderValue.Clone.cs" />
+    <Compile Remove="ContentRangeHeaderValue.Clone.cs" />
+    <Compile Remove="EntityTagHeaderValue.Clone.cs" />
+    <Compile Remove="MediaTypeHeaderValue.Clone.cs" />
+    <Compile Remove="MediaTypeWithQualityHeaderValue.Clone.cs" />
+    <Compile Remove="NameValueHeaderValue.Clone.cs" />
+    <Compile Remove="NameValueWithParametersHeaderValue.Clone.cs" />
+    <Compile Remove="ProductHeaderValue.Clone.cs" />
+    <Compile Remove="ProductInfoHeaderValue.Clone.cs" />
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+    <Compile Remove="RangeConditionHeaderValue.Clone.cs" />
+    <Compile Remove="RangeHeaderValue.Clone.cs" />
+    <Compile Remove="RangeItemHeaderValue.Clone.cs" />
+    <Compile Remove="RetryConditionHeaderValue.Clone.cs" />
+    <Compile Remove="StringWithQualityHeaderValue.Clone.cs" />
+    <Compile Remove="TransferCodingHeaderValue.Clone.cs" />
+    <Compile Remove="TransferCodingWithQualityHeaderValue.Clone.cs" />
+    <Compile Remove="ViaHeaderValue.Clone.cs" />
+    <Compile Remove="WarningHeaderValue.Clone.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="packages.config" />
+    <None Remove="PRI.DICore.nuspec" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Net.Http" Version="4.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <NuGetTargetMoniker>.NETStandard,Version=v1.3</NuGetTargetMoniker>
+    <AssemblyName>PRI.DICore.SystemNetHttp</AssemblyName>
+    <RootNamespace>PRI.DICore.SystemNetHttp</RootNamespace>
+    <Version>0.2.0-beta</Version>
+  </PropertyGroup>
+</Project>

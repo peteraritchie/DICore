@@ -40,10 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthenticationHeaderValue.Clone.cs" />
     <Compile Include="AuthenticationHeaderValue.cs" />
+    <Compile Include="CacheControlHeaderValue.Clone.cs" />
     <Compile Include="CacheControlHeaderValue.cs" />
+    <Compile Include="ContentDispositionHeaderValue.Clone.cs" />
     <Compile Include="ContentDispositionHeaderValue.cs" />
+    <Compile Include="ContentRangeHeaderValue.Clone.cs" />
     <Compile Include="ContentRangeHeaderValue.cs" />
+    <Compile Include="EntityTagHeaderValue.Clone.cs" />
     <Compile Include="EntityTagHeaderValue.cs" />
     <Compile Include="HttpClient.cs" />
     <Compile Include="HttpClientHandler.cs" />
@@ -84,22 +89,37 @@
     <Compile Include="ITransferCodingWithQualityHeaderValue.cs" />
     <Compile Include="IViaHeaderValue.cs" />
     <Compile Include="IWarningHeaderValue.cs" />
+    <Compile Include="MediaTypeHeaderValue.Clone.cs" />
     <Compile Include="MediaTypeHeaderValue.cs" />
+    <Compile Include="MediaTypeWithQualityHeaderValue.Clone.cs" />
     <Compile Include="MediaTypeWithQualityHeaderValue.cs" />
     <Compile Include="MultipartFormDataContent.cs" />
+    <Compile Include="NameValueHeaderValue.Clone.cs" />
     <Compile Include="NameValueHeaderValue.cs" />
+    <Compile Include="NameValueWithParametersHeaderValue.Clone.cs" />
     <Compile Include="NameValueWithParametersHeaderValue.cs" />
+    <Compile Include="ProductHeaderValue.Clone.cs" />
     <Compile Include="ProductHeaderValue.cs" />
+    <Compile Include="ProductInfoHeaderValue.Clone.cs" />
     <Compile Include="ProductInfoHeaderValue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RangeConditionHeaderValue.Clone.cs" />
     <Compile Include="RangeConditionHeaderValue.cs" />
+    <Compile Include="RangeHeaderValue.Clone.cs" />
     <Compile Include="RangeHeaderValue.cs" />
+    <Compile Include="RangeItemHeaderValue.Clone.cs" />
     <Compile Include="RangeItemHeaderValue.cs" />
+    <Compile Include="RetryConditionHeaderValue.Clone.cs" />
     <Compile Include="RetryConditionHeaderValue.cs" />
+    <Compile Include="StringWithQualityHeaderValue.Clone.cs" />
     <Compile Include="StringWithQualityHeaderValue.cs" />
+    <Compile Include="TransferCodingHeaderValue.Clone.cs" />
     <Compile Include="TransferCodingHeaderValue.cs" />
+    <Compile Include="TransferCodingWithQualityHeaderValue.Clone.cs" />
     <Compile Include="TransferCodingWithQualityHeaderValue.cs" />
+    <Compile Include="ViaHeaderValue.Clone.cs" />
     <Compile Include="ViaHeaderValue.cs" />
+    <Compile Include="WarningHeaderValue.Clone.cs" />
     <Compile Include="WarningHeaderValue.cs" />
   </ItemGroup>
   <ItemGroup>

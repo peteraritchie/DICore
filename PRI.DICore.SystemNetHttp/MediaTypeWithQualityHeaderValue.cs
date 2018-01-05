@@ -46,13 +46,5 @@ namespace PRI.DICore.SystemNetHttp
                 this.containedObject.Quality = value;
             }
         }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.System.ICloneable.Clone"/>
-        /// </summary>
-        object System.ICloneable.Clone()
-        {
-            return ((System.ICloneable)(this.containedObject)).Clone();
-        }
     }
 }

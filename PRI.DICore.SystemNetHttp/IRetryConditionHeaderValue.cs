@@ -18,10 +18,13 @@ namespace PRI.DICore.SystemNetHttp
     /// <summary>
     /// An interface to model an abstraction of <see cref="System.Net.Http.Headers.RetryConditionHeaderValue" />
     /// </summary>
-    public interface IRetryConditionHeaderValue : System.ICloneable
-    {
-        
-        System.Nullable<System.DateTimeOffset> Date
+    public interface IRetryConditionHeaderValue
+#if !NETSTANDARD1_0 && !NETSTANDARD1_1 && !NETSTANDARD1_2 && !NETSTANDARD1_3 && !NETSTANDARD1_4 && !NETSTANDARD1_5 && !NETSTANDARD1_6
+        : System.ICloneable
+#endif
+	{
+
+		System.Nullable<System.DateTimeOffset> Date
         {
             get;
         }

@@ -81,13 +81,5 @@ namespace PRI.DICore.SystemNetHttp
         {
             return this.containedObject.ToString();
         }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.NameValueHeaderValue.System.ICloneable.Clone"/>
-        /// </summary>
-        object System.ICloneable.Clone()
-        {
-            return ((System.ICloneable)(this.containedObject)).Clone();
-        }
     }
 }
