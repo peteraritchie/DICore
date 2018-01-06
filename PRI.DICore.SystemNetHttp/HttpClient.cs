@@ -18,8 +18,14 @@ namespace PRI.DICore.SystemNetHttp
 	/// </summary>
 	public sealed partial class HttpClient : IHttpClient
 	{
-
+		private static System.Net.Http.HttpClient sharedHttpClient = new System.Net.Http.HttpClient();
 		private System.Net.Http.HttpClient containedObject;
+		private IDisposable containedDisposable;
+
+		public HttpClient()
+		{
+			containedObject = sharedHttpClient;
+		}
 
 		public HttpClient(System.Net.Http.HttpClient containedObject)
 		{
@@ -28,6 +34,7 @@ namespace PRI.DICore.SystemNetHttp
 				throw new System.ArgumentNullException("containedObject");
 			}
 			this.containedObject = containedObject;
+			this.containedDisposable = containedObject;
 		}
 
 		/// <summary>
@@ -339,7 +346,10 @@ namespace PRI.DICore.SystemNetHttp
 		/// </summary>
 		public void Dispose()
 		{
-			this.containedObject.Dispose();
+			if (this.containedDisposable != null)
+			{
+				this.containedDisposable.Dispose();
+			}
 		}
 	}
 }
