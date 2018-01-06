@@ -13,291 +13,291 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="IHttpResponseHeaders" />
-    /// </summary>
-    public sealed partial class HttpResponseHeaders : IHttpResponseHeaders
-    {
-        
-        private System.Net.Http.Headers.HttpResponseHeaders containedObject;
-        
-        public HttpResponseHeaders(System.Net.Http.Headers.HttpResponseHeaders containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.AcceptRanges"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<string> AcceptRanges
-        {
-            get
-            {
-                return this.containedObject.AcceptRanges;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Age"/>
-        /// </summary>
-        public System.Nullable<System.TimeSpan> Age
-        {
-            get
-            {
-                return this.containedObject.Age;
-            }
-            set
-            {
-                this.containedObject.Age = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.ETag"/>
-        /// </summary>
-        public System.Net.Http.Headers.EntityTagHeaderValue ETag
-        {
-            get
-            {
-                return this.containedObject.ETag;
-            }
-            set
-            {
-                this.containedObject.ETag = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Location"/>
-        /// </summary>
-        public System.Uri Location
-        {
-            get
-            {
-                return this.containedObject.Location;
-            }
-            set
-            {
-                this.containedObject.Location = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.ProxyAuthenticate"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.AuthenticationHeaderValue> ProxyAuthenticate
-        {
-            get
-            {
-                return this.containedObject.ProxyAuthenticate;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.RetryAfter"/>
-        /// </summary>
-        public System.Net.Http.Headers.RetryConditionHeaderValue RetryAfter
-        {
-            get
-            {
-                return this.containedObject.RetryAfter;
-            }
-            set
-            {
-                this.containedObject.RetryAfter = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Server"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductInfoHeaderValue> Server
-        {
-            get
-            {
-                return this.containedObject.Server;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Vary"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<string> Vary
-        {
-            get
-            {
-                return this.containedObject.Vary;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.WwwAuthenticate"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.AuthenticationHeaderValue> WwwAuthenticate
-        {
-            get
-            {
-                return this.containedObject.WwwAuthenticate;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.CacheControl"/>
-        /// </summary>
-        public System.Net.Http.Headers.CacheControlHeaderValue CacheControl
-        {
-            get
-            {
-                return this.containedObject.CacheControl;
-            }
-            set
-            {
-                this.containedObject.CacheControl = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Connection"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<string> Connection
-        {
-            get
-            {
-                return this.containedObject.Connection;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.ConnectionClose"/>
-        /// </summary>
-        public System.Nullable<bool> ConnectionClose
-        {
-            get
-            {
-                return this.containedObject.ConnectionClose;
-            }
-            set
-            {
-                this.containedObject.ConnectionClose = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Date"/>
-        /// </summary>
-        public System.Nullable<System.DateTimeOffset> Date
-        {
-            get
-            {
-                return this.containedObject.Date;
-            }
-            set
-            {
-                this.containedObject.Date = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Pragma"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.NameValueHeaderValue> Pragma
-        {
-            get
-            {
-                return this.containedObject.Pragma;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Trailer"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<string> Trailer
-        {
-            get
-            {
-                return this.containedObject.Trailer;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.TransferEncoding"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.TransferCodingHeaderValue> TransferEncoding
-        {
-            get
-            {
-                return this.containedObject.TransferEncoding;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.TransferEncodingChunked"/>
-        /// </summary>
-        public System.Nullable<bool> TransferEncodingChunked
-        {
-            get
-            {
-                return this.containedObject.TransferEncodingChunked;
-            }
-            set
-            {
-                this.containedObject.TransferEncodingChunked = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Upgrade"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductHeaderValue> Upgrade
-        {
-            get
-            {
-                return this.containedObject.Upgrade;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Via"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ViaHeaderValue> Via
-        {
-            get
-            {
-                return this.containedObject.Via;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Warning"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.WarningHeaderValue> Warning
-        {
-            get
-            {
-                return this.containedObject.Warning;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.System.Collections.IEnumerable.GetEnumerator"/>
-        /// </summary>
-        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
-        {
-            return ((System.Collections.IEnumerable)(this.containedObject)).GetEnumerator();
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpResponseHeaders.GetEnumerator"/>
-        /// </summary>
-        public System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<string, System.Collections.Generic.IEnumerable<string>>> GetEnumerator()
-        {
-            return this.containedObject.GetEnumerator();
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="IHttpResponseHeaders" />
+	/// </summary>
+	public sealed partial class HttpResponseHeaders : IHttpResponseHeaders
+	{
+
+		private System.Net.Http.Headers.HttpResponseHeaders containedObject;
+
+		public HttpResponseHeaders(System.Net.Http.Headers.HttpResponseHeaders containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.AcceptRanges"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<string> AcceptRanges
+		{
+			get
+			{
+				return this.containedObject.AcceptRanges;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Age"/>
+		/// </summary>
+		public System.Nullable<System.TimeSpan> Age
+		{
+			get
+			{
+				return this.containedObject.Age;
+			}
+			set
+			{
+				this.containedObject.Age = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.ETag"/>
+		/// </summary>
+		public System.Net.Http.Headers.EntityTagHeaderValue ETag
+		{
+			get
+			{
+				return this.containedObject.ETag;
+			}
+			set
+			{
+				this.containedObject.ETag = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Location"/>
+		/// </summary>
+		public System.Uri Location
+		{
+			get
+			{
+				return this.containedObject.Location;
+			}
+			set
+			{
+				this.containedObject.Location = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.ProxyAuthenticate"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.AuthenticationHeaderValue> ProxyAuthenticate
+		{
+			get
+			{
+				return this.containedObject.ProxyAuthenticate;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.RetryAfter"/>
+		/// </summary>
+		public System.Net.Http.Headers.RetryConditionHeaderValue RetryAfter
+		{
+			get
+			{
+				return this.containedObject.RetryAfter;
+			}
+			set
+			{
+				this.containedObject.RetryAfter = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Server"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductInfoHeaderValue> Server
+		{
+			get
+			{
+				return this.containedObject.Server;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Vary"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<string> Vary
+		{
+			get
+			{
+				return this.containedObject.Vary;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.WwwAuthenticate"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.AuthenticationHeaderValue> WwwAuthenticate
+		{
+			get
+			{
+				return this.containedObject.WwwAuthenticate;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.CacheControl"/>
+		/// </summary>
+		public System.Net.Http.Headers.CacheControlHeaderValue CacheControl
+		{
+			get
+			{
+				return this.containedObject.CacheControl;
+			}
+			set
+			{
+				this.containedObject.CacheControl = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Connection"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<string> Connection
+		{
+			get
+			{
+				return this.containedObject.Connection;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.ConnectionClose"/>
+		/// </summary>
+		public System.Nullable<bool> ConnectionClose
+		{
+			get
+			{
+				return this.containedObject.ConnectionClose;
+			}
+			set
+			{
+				this.containedObject.ConnectionClose = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Date"/>
+		/// </summary>
+		public System.Nullable<System.DateTimeOffset> Date
+		{
+			get
+			{
+				return this.containedObject.Date;
+			}
+			set
+			{
+				this.containedObject.Date = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Pragma"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.NameValueHeaderValue> Pragma
+		{
+			get
+			{
+				return this.containedObject.Pragma;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Trailer"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<string> Trailer
+		{
+			get
+			{
+				return this.containedObject.Trailer;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.TransferEncoding"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.TransferCodingHeaderValue> TransferEncoding
+		{
+			get
+			{
+				return this.containedObject.TransferEncoding;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.TransferEncodingChunked"/>
+		/// </summary>
+		public System.Nullable<bool> TransferEncodingChunked
+		{
+			get
+			{
+				return this.containedObject.TransferEncodingChunked;
+			}
+			set
+			{
+				this.containedObject.TransferEncodingChunked = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Upgrade"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductHeaderValue> Upgrade
+		{
+			get
+			{
+				return this.containedObject.Upgrade;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Via"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ViaHeaderValue> Via
+		{
+			get
+			{
+				return this.containedObject.Via;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.Warning"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.WarningHeaderValue> Warning
+		{
+			get
+			{
+				return this.containedObject.Warning;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.System.Collections.IEnumerable.GetEnumerator"/>
+		/// </summary>
+		System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+		{
+			return ((System.Collections.IEnumerable)(this.containedObject)).GetEnumerator();
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpResponseHeaders.GetEnumerator"/>
+		/// </summary>
+		public System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<string, System.Collections.Generic.IEnumerable<string>>> GetEnumerator()
+		{
+			return this.containedObject.GetEnumerator();
+		}
+	}
 }

@@ -13,91 +13,91 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="IWarningHeaderValue" />
-    /// </summary>
-    public sealed partial class WarningHeaderValue : IWarningHeaderValue
-    {
-        
-        private System.Net.Http.Headers.WarningHeaderValue containedObject;
-        
-        public WarningHeaderValue(System.Net.Http.Headers.WarningHeaderValue containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.WarningHeaderValue.Code"/>
-        /// </summary>
-        public int Code
-        {
-            get
-            {
-                return this.containedObject.Code;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.WarningHeaderValue.Agent"/>
-        /// </summary>
-        public string Agent
-        {
-            get
-            {
-                return this.containedObject.Agent;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.WarningHeaderValue.Text"/>
-        /// </summary>
-        public string Text
-        {
-            get
-            {
-                return this.containedObject.Text;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.WarningHeaderValue.Date"/>
-        /// </summary>
-        public System.Nullable<System.DateTimeOffset> Date
-        {
-            get
-            {
-                return this.containedObject.Date;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.WarningHeaderValue.ToString"/>
-        /// </summary>
-        public override string ToString()
-        {
-            return this.containedObject.ToString();
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.WarningHeaderValue.Equals"/>
-        /// </summary>
-        public override bool Equals(object obj)
-        {
-            return this.containedObject.Equals(obj);
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.WarningHeaderValue.GetHashCode"/>
-        /// </summary>
-        public override int GetHashCode()
-        {
-            return this.containedObject.GetHashCode();
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="IWarningHeaderValue" />
+	/// </summary>
+	public sealed partial class WarningHeaderValue : IWarningHeaderValue
+	{
+
+		private System.Net.Http.Headers.WarningHeaderValue containedObject;
+
+		public WarningHeaderValue(System.Net.Http.Headers.WarningHeaderValue containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.WarningHeaderValue.Code"/>
+		/// </summary>
+		public int Code
+		{
+			get
+			{
+				return this.containedObject.Code;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.WarningHeaderValue.Agent"/>
+		/// </summary>
+		public string Agent
+		{
+			get
+			{
+				return this.containedObject.Agent;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.WarningHeaderValue.Text"/>
+		/// </summary>
+		public string Text
+		{
+			get
+			{
+				return this.containedObject.Text;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.WarningHeaderValue.Date"/>
+		/// </summary>
+		public System.Nullable<System.DateTimeOffset> Date
+		{
+			get
+			{
+				return this.containedObject.Date;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.WarningHeaderValue.ToString"/>
+		/// </summary>
+		public override string ToString()
+		{
+			return this.containedObject.ToString();
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.WarningHeaderValue.Equals"/>
+		/// </summary>
+		public override bool Equals(object obj)
+		{
+			return this.containedObject.Equals(obj);
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.WarningHeaderValue.GetHashCode"/>
+		/// </summary>
+		public override int GetHashCode()
+		{
+			return this.containedObject.GetHashCode();
+		}
+	}
 }

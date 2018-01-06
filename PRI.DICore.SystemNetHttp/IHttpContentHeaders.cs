@@ -13,75 +13,75 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// An interface to model an abstraction of <see cref="System.Net.Http.Headers.HttpContentHeaders" />
-    /// </summary>
-    public interface IHttpContentHeaders : System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, System.Collections.Generic.IEnumerable<string>>>, System.Collections.IEnumerable
-    {
-        
-        System.Collections.Generic.ICollection<string> Allow
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.ContentDispositionHeaderValue ContentDisposition
-        {
-            get;
-            set;
-        }
-        
-        System.Collections.Generic.ICollection<string> ContentEncoding
-        {
-            get;
-        }
-        
-        System.Collections.Generic.ICollection<string> ContentLanguage
-        {
-            get;
-        }
-        
-        System.Nullable<long> ContentLength
-        {
-            get;
-            set;
-        }
-        
-        System.Uri ContentLocation
-        {
-            get;
-            set;
-        }
-        
-        byte[] ContentMD5
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.ContentRangeHeaderValue ContentRange
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.MediaTypeHeaderValue ContentType
-        {
-            get;
-            set;
-        }
-        
-        System.Nullable<System.DateTimeOffset> Expires
-        {
-            get;
-            set;
-        }
-        
-        System.Nullable<System.DateTimeOffset> LastModified
-        {
-            get;
-            set;
-        }
-    }
+
+
+	/// <summary>
+	/// An interface to model an abstraction of <see cref="System.Net.Http.Headers.HttpContentHeaders" />
+	/// </summary>
+	public interface IHttpContentHeaders : System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, System.Collections.Generic.IEnumerable<string>>>, System.Collections.IEnumerable
+	{
+
+		System.Collections.Generic.ICollection<string> Allow
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.ContentDispositionHeaderValue ContentDisposition
+		{
+			get;
+			set;
+		}
+
+		System.Collections.Generic.ICollection<string> ContentEncoding
+		{
+			get;
+		}
+
+		System.Collections.Generic.ICollection<string> ContentLanguage
+		{
+			get;
+		}
+
+		System.Nullable<long> ContentLength
+		{
+			get;
+			set;
+		}
+
+		System.Uri ContentLocation
+		{
+			get;
+			set;
+		}
+
+		byte[] ContentMD5
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.ContentRangeHeaderValue ContentRange
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.MediaTypeHeaderValue ContentType
+		{
+			get;
+			set;
+		}
+
+		System.Nullable<System.DateTimeOffset> Expires
+		{
+			get;
+			set;
+		}
+
+		System.Nullable<System.DateTimeOffset> LastModified
+		{
+			get;
+			set;
+		}
+	}
 }

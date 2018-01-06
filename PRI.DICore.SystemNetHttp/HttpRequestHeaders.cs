@@ -13,440 +13,440 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="IHttpRequestHeaders" />
-    /// </summary>
-    public sealed partial class HttpRequestHeaders : IHttpRequestHeaders
-    {
-        
-        private System.Net.Http.Headers.HttpRequestHeaders containedObject;
-        
-        public HttpRequestHeaders(System.Net.Http.Headers.HttpRequestHeaders containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Accept"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.MediaTypeWithQualityHeaderValue> Accept
-        {
-            get
-            {
-                return this.containedObject.Accept;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.AcceptCharset"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.StringWithQualityHeaderValue> AcceptCharset
-        {
-            get
-            {
-                return this.containedObject.AcceptCharset;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.AcceptEncoding"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.StringWithQualityHeaderValue> AcceptEncoding
-        {
-            get
-            {
-                return this.containedObject.AcceptEncoding;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.AcceptLanguage"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.StringWithQualityHeaderValue> AcceptLanguage
-        {
-            get
-            {
-                return this.containedObject.AcceptLanguage;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Authorization"/>
-        /// </summary>
-        public System.Net.Http.Headers.AuthenticationHeaderValue Authorization
-        {
-            get
-            {
-                return this.containedObject.Authorization;
-            }
-            set
-            {
-                this.containedObject.Authorization = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Expect"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.NameValueWithParametersHeaderValue> Expect
-        {
-            get
-            {
-                return this.containedObject.Expect;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.ExpectContinue"/>
-        /// </summary>
-        public System.Nullable<bool> ExpectContinue
-        {
-            get
-            {
-                return this.containedObject.ExpectContinue;
-            }
-            set
-            {
-                this.containedObject.ExpectContinue = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.From"/>
-        /// </summary>
-        public string From
-        {
-            get
-            {
-                return this.containedObject.From;
-            }
-            set
-            {
-                this.containedObject.From = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Host"/>
-        /// </summary>
-        public string Host
-        {
-            get
-            {
-                return this.containedObject.Host;
-            }
-            set
-            {
-                this.containedObject.Host = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.IfMatch"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.EntityTagHeaderValue> IfMatch
-        {
-            get
-            {
-                return this.containedObject.IfMatch;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.IfModifiedSince"/>
-        /// </summary>
-        public System.Nullable<System.DateTimeOffset> IfModifiedSince
-        {
-            get
-            {
-                return this.containedObject.IfModifiedSince;
-            }
-            set
-            {
-                this.containedObject.IfModifiedSince = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.IfNoneMatch"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.EntityTagHeaderValue> IfNoneMatch
-        {
-            get
-            {
-                return this.containedObject.IfNoneMatch;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.IfRange"/>
-        /// </summary>
-        public System.Net.Http.Headers.RangeConditionHeaderValue IfRange
-        {
-            get
-            {
-                return this.containedObject.IfRange;
-            }
-            set
-            {
-                this.containedObject.IfRange = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.IfUnmodifiedSince"/>
-        /// </summary>
-        public System.Nullable<System.DateTimeOffset> IfUnmodifiedSince
-        {
-            get
-            {
-                return this.containedObject.IfUnmodifiedSince;
-            }
-            set
-            {
-                this.containedObject.IfUnmodifiedSince = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.MaxForwards"/>
-        /// </summary>
-        public System.Nullable<int> MaxForwards
-        {
-            get
-            {
-                return this.containedObject.MaxForwards;
-            }
-            set
-            {
-                this.containedObject.MaxForwards = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.ProxyAuthorization"/>
-        /// </summary>
-        public System.Net.Http.Headers.AuthenticationHeaderValue ProxyAuthorization
-        {
-            get
-            {
-                return this.containedObject.ProxyAuthorization;
-            }
-            set
-            {
-                this.containedObject.ProxyAuthorization = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Range"/>
-        /// </summary>
-        public System.Net.Http.Headers.RangeHeaderValue Range
-        {
-            get
-            {
-                return this.containedObject.Range;
-            }
-            set
-            {
-                this.containedObject.Range = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Referrer"/>
-        /// </summary>
-        public System.Uri Referrer
-        {
-            get
-            {
-                return this.containedObject.Referrer;
-            }
-            set
-            {
-                this.containedObject.Referrer = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.TE"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.TransferCodingWithQualityHeaderValue> TE
-        {
-            get
-            {
-                return this.containedObject.TE;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.UserAgent"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductInfoHeaderValue> UserAgent
-        {
-            get
-            {
-                return this.containedObject.UserAgent;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.CacheControl"/>
-        /// </summary>
-        public System.Net.Http.Headers.CacheControlHeaderValue CacheControl
-        {
-            get
-            {
-                return this.containedObject.CacheControl;
-            }
-            set
-            {
-                this.containedObject.CacheControl = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Connection"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<string> Connection
-        {
-            get
-            {
-                return this.containedObject.Connection;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.ConnectionClose"/>
-        /// </summary>
-        public System.Nullable<bool> ConnectionClose
-        {
-            get
-            {
-                return this.containedObject.ConnectionClose;
-            }
-            set
-            {
-                this.containedObject.ConnectionClose = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Date"/>
-        /// </summary>
-        public System.Nullable<System.DateTimeOffset> Date
-        {
-            get
-            {
-                return this.containedObject.Date;
-            }
-            set
-            {
-                this.containedObject.Date = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Pragma"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.NameValueHeaderValue> Pragma
-        {
-            get
-            {
-                return this.containedObject.Pragma;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Trailer"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<string> Trailer
-        {
-            get
-            {
-                return this.containedObject.Trailer;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.TransferEncoding"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.TransferCodingHeaderValue> TransferEncoding
-        {
-            get
-            {
-                return this.containedObject.TransferEncoding;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.TransferEncodingChunked"/>
-        /// </summary>
-        public System.Nullable<bool> TransferEncodingChunked
-        {
-            get
-            {
-                return this.containedObject.TransferEncodingChunked;
-            }
-            set
-            {
-                this.containedObject.TransferEncodingChunked = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Upgrade"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductHeaderValue> Upgrade
-        {
-            get
-            {
-                return this.containedObject.Upgrade;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Via"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ViaHeaderValue> Via
-        {
-            get
-            {
-                return this.containedObject.Via;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Warning"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.WarningHeaderValue> Warning
-        {
-            get
-            {
-                return this.containedObject.Warning;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.System.Collections.IEnumerable.GetEnumerator"/>
-        /// </summary>
-        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
-        {
-            return ((System.Collections.IEnumerable)(this.containedObject)).GetEnumerator();
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.HttpRequestHeaders.GetEnumerator"/>
-        /// </summary>
-        public System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<string, System.Collections.Generic.IEnumerable<string>>> GetEnumerator()
-        {
-            return this.containedObject.GetEnumerator();
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="IHttpRequestHeaders" />
+	/// </summary>
+	public sealed partial class HttpRequestHeaders : IHttpRequestHeaders
+	{
+
+		private System.Net.Http.Headers.HttpRequestHeaders containedObject;
+
+		public HttpRequestHeaders(System.Net.Http.Headers.HttpRequestHeaders containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Accept"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.MediaTypeWithQualityHeaderValue> Accept
+		{
+			get
+			{
+				return this.containedObject.Accept;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.AcceptCharset"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.StringWithQualityHeaderValue> AcceptCharset
+		{
+			get
+			{
+				return this.containedObject.AcceptCharset;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.AcceptEncoding"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.StringWithQualityHeaderValue> AcceptEncoding
+		{
+			get
+			{
+				return this.containedObject.AcceptEncoding;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.AcceptLanguage"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.StringWithQualityHeaderValue> AcceptLanguage
+		{
+			get
+			{
+				return this.containedObject.AcceptLanguage;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Authorization"/>
+		/// </summary>
+		public System.Net.Http.Headers.AuthenticationHeaderValue Authorization
+		{
+			get
+			{
+				return this.containedObject.Authorization;
+			}
+			set
+			{
+				this.containedObject.Authorization = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Expect"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.NameValueWithParametersHeaderValue> Expect
+		{
+			get
+			{
+				return this.containedObject.Expect;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.ExpectContinue"/>
+		/// </summary>
+		public System.Nullable<bool> ExpectContinue
+		{
+			get
+			{
+				return this.containedObject.ExpectContinue;
+			}
+			set
+			{
+				this.containedObject.ExpectContinue = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.From"/>
+		/// </summary>
+		public string From
+		{
+			get
+			{
+				return this.containedObject.From;
+			}
+			set
+			{
+				this.containedObject.From = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Host"/>
+		/// </summary>
+		public string Host
+		{
+			get
+			{
+				return this.containedObject.Host;
+			}
+			set
+			{
+				this.containedObject.Host = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.IfMatch"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.EntityTagHeaderValue> IfMatch
+		{
+			get
+			{
+				return this.containedObject.IfMatch;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.IfModifiedSince"/>
+		/// </summary>
+		public System.Nullable<System.DateTimeOffset> IfModifiedSince
+		{
+			get
+			{
+				return this.containedObject.IfModifiedSince;
+			}
+			set
+			{
+				this.containedObject.IfModifiedSince = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.IfNoneMatch"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.EntityTagHeaderValue> IfNoneMatch
+		{
+			get
+			{
+				return this.containedObject.IfNoneMatch;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.IfRange"/>
+		/// </summary>
+		public System.Net.Http.Headers.RangeConditionHeaderValue IfRange
+		{
+			get
+			{
+				return this.containedObject.IfRange;
+			}
+			set
+			{
+				this.containedObject.IfRange = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.IfUnmodifiedSince"/>
+		/// </summary>
+		public System.Nullable<System.DateTimeOffset> IfUnmodifiedSince
+		{
+			get
+			{
+				return this.containedObject.IfUnmodifiedSince;
+			}
+			set
+			{
+				this.containedObject.IfUnmodifiedSince = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.MaxForwards"/>
+		/// </summary>
+		public System.Nullable<int> MaxForwards
+		{
+			get
+			{
+				return this.containedObject.MaxForwards;
+			}
+			set
+			{
+				this.containedObject.MaxForwards = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.ProxyAuthorization"/>
+		/// </summary>
+		public System.Net.Http.Headers.AuthenticationHeaderValue ProxyAuthorization
+		{
+			get
+			{
+				return this.containedObject.ProxyAuthorization;
+			}
+			set
+			{
+				this.containedObject.ProxyAuthorization = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Range"/>
+		/// </summary>
+		public System.Net.Http.Headers.RangeHeaderValue Range
+		{
+			get
+			{
+				return this.containedObject.Range;
+			}
+			set
+			{
+				this.containedObject.Range = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Referrer"/>
+		/// </summary>
+		public System.Uri Referrer
+		{
+			get
+			{
+				return this.containedObject.Referrer;
+			}
+			set
+			{
+				this.containedObject.Referrer = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.TE"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.TransferCodingWithQualityHeaderValue> TE
+		{
+			get
+			{
+				return this.containedObject.TE;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.UserAgent"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductInfoHeaderValue> UserAgent
+		{
+			get
+			{
+				return this.containedObject.UserAgent;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.CacheControl"/>
+		/// </summary>
+		public System.Net.Http.Headers.CacheControlHeaderValue CacheControl
+		{
+			get
+			{
+				return this.containedObject.CacheControl;
+			}
+			set
+			{
+				this.containedObject.CacheControl = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Connection"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<string> Connection
+		{
+			get
+			{
+				return this.containedObject.Connection;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.ConnectionClose"/>
+		/// </summary>
+		public System.Nullable<bool> ConnectionClose
+		{
+			get
+			{
+				return this.containedObject.ConnectionClose;
+			}
+			set
+			{
+				this.containedObject.ConnectionClose = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Date"/>
+		/// </summary>
+		public System.Nullable<System.DateTimeOffset> Date
+		{
+			get
+			{
+				return this.containedObject.Date;
+			}
+			set
+			{
+				this.containedObject.Date = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Pragma"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.NameValueHeaderValue> Pragma
+		{
+			get
+			{
+				return this.containedObject.Pragma;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Trailer"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<string> Trailer
+		{
+			get
+			{
+				return this.containedObject.Trailer;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.TransferEncoding"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.TransferCodingHeaderValue> TransferEncoding
+		{
+			get
+			{
+				return this.containedObject.TransferEncoding;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.TransferEncodingChunked"/>
+		/// </summary>
+		public System.Nullable<bool> TransferEncodingChunked
+		{
+			get
+			{
+				return this.containedObject.TransferEncodingChunked;
+			}
+			set
+			{
+				this.containedObject.TransferEncodingChunked = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Upgrade"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductHeaderValue> Upgrade
+		{
+			get
+			{
+				return this.containedObject.Upgrade;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Via"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ViaHeaderValue> Via
+		{
+			get
+			{
+				return this.containedObject.Via;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.Warning"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.WarningHeaderValue> Warning
+		{
+			get
+			{
+				return this.containedObject.Warning;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.System.Collections.IEnumerable.GetEnumerator"/>
+		/// </summary>
+		System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+		{
+			return ((System.Collections.IEnumerable)(this.containedObject)).GetEnumerator();
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.HttpRequestHeaders.GetEnumerator"/>
+		/// </summary>
+		public System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<string, System.Collections.Generic.IEnumerable<string>>> GetEnumerator()
+		{
+			return this.containedObject.GetEnumerator();
+		}
+	}
 }

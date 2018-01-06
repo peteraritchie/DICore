@@ -13,38 +13,38 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="ITransferCodingWithQualityHeaderValue" />
-    /// </summary>
-    public sealed partial class TransferCodingWithQualityHeaderValue : ITransferCodingWithQualityHeaderValue
-    {
-        
-        private System.Net.Http.Headers.TransferCodingWithQualityHeaderValue containedObject;
-        
-        public TransferCodingWithQualityHeaderValue(System.Net.Http.Headers.TransferCodingWithQualityHeaderValue containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Quality"/>
-        /// </summary>
-        public System.Nullable<double> Quality
-        {
-            get
-            {
-                return this.containedObject.Quality;
-            }
-            set
-            {
-                this.containedObject.Quality = value;
-            }
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="ITransferCodingWithQualityHeaderValue" />
+	/// </summary>
+	public sealed partial class TransferCodingWithQualityHeaderValue : ITransferCodingWithQualityHeaderValue
+	{
+
+		private System.Net.Http.Headers.TransferCodingWithQualityHeaderValue containedObject;
+
+		public TransferCodingWithQualityHeaderValue(System.Net.Http.Headers.TransferCodingWithQualityHeaderValue containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Quality"/>
+		/// </summary>
+		public System.Nullable<double> Quality
+		{
+			get
+			{
+				return this.containedObject.Quality;
+			}
+			set
+			{
+				this.containedObject.Quality = value;
+			}
+		}
+	}
 }

@@ -13,120 +13,120 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// An interface to model an abstraction of <see cref="System.Net.Http.Headers.HttpResponseHeaders" />
-    /// </summary>
-    public interface IHttpResponseHeaders : System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, System.Collections.Generic.IEnumerable<string>>>, System.Collections.IEnumerable
-    {
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<string> AcceptRanges
-        {
-            get;
-        }
-        
-        System.Nullable<System.TimeSpan> Age
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.EntityTagHeaderValue ETag
-        {
-            get;
-            set;
-        }
-        
-        System.Uri Location
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.AuthenticationHeaderValue> ProxyAuthenticate
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.RetryConditionHeaderValue RetryAfter
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductInfoHeaderValue> Server
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<string> Vary
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.AuthenticationHeaderValue> WwwAuthenticate
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.CacheControlHeaderValue CacheControl
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<string> Connection
-        {
-            get;
-        }
-        
-        System.Nullable<bool> ConnectionClose
-        {
-            get;
-            set;
-        }
-        
-        System.Nullable<System.DateTimeOffset> Date
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.NameValueHeaderValue> Pragma
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<string> Trailer
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.TransferCodingHeaderValue> TransferEncoding
-        {
-            get;
-        }
-        
-        System.Nullable<bool> TransferEncodingChunked
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductHeaderValue> Upgrade
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ViaHeaderValue> Via
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.WarningHeaderValue> Warning
-        {
-            get;
-        }
-    }
+
+
+	/// <summary>
+	/// An interface to model an abstraction of <see cref="System.Net.Http.Headers.HttpResponseHeaders" />
+	/// </summary>
+	public interface IHttpResponseHeaders : System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, System.Collections.Generic.IEnumerable<string>>>, System.Collections.IEnumerable
+	{
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<string> AcceptRanges
+		{
+			get;
+		}
+
+		System.Nullable<System.TimeSpan> Age
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.EntityTagHeaderValue ETag
+		{
+			get;
+			set;
+		}
+
+		System.Uri Location
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.AuthenticationHeaderValue> ProxyAuthenticate
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.RetryConditionHeaderValue RetryAfter
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductInfoHeaderValue> Server
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<string> Vary
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.AuthenticationHeaderValue> WwwAuthenticate
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.CacheControlHeaderValue CacheControl
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<string> Connection
+		{
+			get;
+		}
+
+		System.Nullable<bool> ConnectionClose
+		{
+			get;
+			set;
+		}
+
+		System.Nullable<System.DateTimeOffset> Date
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.NameValueHeaderValue> Pragma
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<string> Trailer
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.TransferCodingHeaderValue> TransferEncoding
+		{
+			get;
+		}
+
+		System.Nullable<bool> TransferEncodingChunked
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductHeaderValue> Upgrade
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ViaHeaderValue> Via
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.WarningHeaderValue> Warning
+		{
+			get;
+		}
+	}
 }

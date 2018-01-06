@@ -13,69 +13,69 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="IRetryConditionHeaderValue" />
-    /// </summary>
-    public sealed partial class RetryConditionHeaderValue : IRetryConditionHeaderValue
-    {
-        
-        private System.Net.Http.Headers.RetryConditionHeaderValue containedObject;
-        
-        public RetryConditionHeaderValue(System.Net.Http.Headers.RetryConditionHeaderValue containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RetryConditionHeaderValue.Date"/>
-        /// </summary>
-        public System.Nullable<System.DateTimeOffset> Date
-        {
-            get
-            {
-                return this.containedObject.Date;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RetryConditionHeaderValue.Delta"/>
-        /// </summary>
-        public System.Nullable<System.TimeSpan> Delta
-        {
-            get
-            {
-                return this.containedObject.Delta;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RetryConditionHeaderValue.ToString"/>
-        /// </summary>
-        public override string ToString()
-        {
-            return this.containedObject.ToString();
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RetryConditionHeaderValue.Equals"/>
-        /// </summary>
-        public override bool Equals(object obj)
-        {
-            return this.containedObject.Equals(obj);
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RetryConditionHeaderValue.GetHashCode"/>
-        /// </summary>
-        public override int GetHashCode()
-        {
-            return this.containedObject.GetHashCode();
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="IRetryConditionHeaderValue" />
+	/// </summary>
+	public sealed partial class RetryConditionHeaderValue : IRetryConditionHeaderValue
+	{
+
+		private System.Net.Http.Headers.RetryConditionHeaderValue containedObject;
+
+		public RetryConditionHeaderValue(System.Net.Http.Headers.RetryConditionHeaderValue containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RetryConditionHeaderValue.Date"/>
+		/// </summary>
+		public System.Nullable<System.DateTimeOffset> Date
+		{
+			get
+			{
+				return this.containedObject.Date;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RetryConditionHeaderValue.Delta"/>
+		/// </summary>
+		public System.Nullable<System.TimeSpan> Delta
+		{
+			get
+			{
+				return this.containedObject.Delta;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RetryConditionHeaderValue.ToString"/>
+		/// </summary>
+		public override string ToString()
+		{
+			return this.containedObject.ToString();
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RetryConditionHeaderValue.Equals"/>
+		/// </summary>
+		public override bool Equals(object obj)
+		{
+			return this.containedObject.Equals(obj);
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RetryConditionHeaderValue.GetHashCode"/>
+		/// </summary>
+		public override int GetHashCode()
+		{
+			return this.containedObject.GetHashCode();
+		}
+	}
 }

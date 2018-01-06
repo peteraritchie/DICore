@@ -13,91 +13,91 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="IViaHeaderValue" />
-    /// </summary>
-    public sealed partial class ViaHeaderValue : IViaHeaderValue
-    {
-        
-        private System.Net.Http.Headers.ViaHeaderValue containedObject;
-        
-        public ViaHeaderValue(System.Net.Http.Headers.ViaHeaderValue containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ViaHeaderValue.ProtocolName"/>
-        /// </summary>
-        public string ProtocolName
-        {
-            get
-            {
-                return this.containedObject.ProtocolName;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ViaHeaderValue.ProtocolVersion"/>
-        /// </summary>
-        public string ProtocolVersion
-        {
-            get
-            {
-                return this.containedObject.ProtocolVersion;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ViaHeaderValue.ReceivedBy"/>
-        /// </summary>
-        public string ReceivedBy
-        {
-            get
-            {
-                return this.containedObject.ReceivedBy;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ViaHeaderValue.Comment"/>
-        /// </summary>
-        public string Comment
-        {
-            get
-            {
-                return this.containedObject.Comment;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ViaHeaderValue.ToString"/>
-        /// </summary>
-        public override string ToString()
-        {
-            return this.containedObject.ToString();
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ViaHeaderValue.Equals"/>
-        /// </summary>
-        public override bool Equals(object obj)
-        {
-            return this.containedObject.Equals(obj);
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ViaHeaderValue.GetHashCode"/>
-        /// </summary>
-        public override int GetHashCode()
-        {
-            return this.containedObject.GetHashCode();
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="IViaHeaderValue" />
+	/// </summary>
+	public sealed partial class ViaHeaderValue : IViaHeaderValue
+	{
+
+		private System.Net.Http.Headers.ViaHeaderValue containedObject;
+
+		public ViaHeaderValue(System.Net.Http.Headers.ViaHeaderValue containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ViaHeaderValue.ProtocolName"/>
+		/// </summary>
+		public string ProtocolName
+		{
+			get
+			{
+				return this.containedObject.ProtocolName;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ViaHeaderValue.ProtocolVersion"/>
+		/// </summary>
+		public string ProtocolVersion
+		{
+			get
+			{
+				return this.containedObject.ProtocolVersion;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ViaHeaderValue.ReceivedBy"/>
+		/// </summary>
+		public string ReceivedBy
+		{
+			get
+			{
+				return this.containedObject.ReceivedBy;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ViaHeaderValue.Comment"/>
+		/// </summary>
+		public string Comment
+		{
+			get
+			{
+				return this.containedObject.Comment;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ViaHeaderValue.ToString"/>
+		/// </summary>
+		public override string ToString()
+		{
+			return this.containedObject.ToString();
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ViaHeaderValue.Equals"/>
+		/// </summary>
+		public override bool Equals(object obj)
+		{
+			return this.containedObject.Equals(obj);
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ViaHeaderValue.GetHashCode"/>
+		/// </summary>
+		public override int GetHashCode()
+		{
+			return this.containedObject.GetHashCode();
+		}
+	}
 }

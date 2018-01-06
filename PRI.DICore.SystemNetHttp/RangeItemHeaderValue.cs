@@ -13,69 +13,69 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="IRangeItemHeaderValue" />
-    /// </summary>
-    public sealed partial class RangeItemHeaderValue : IRangeItemHeaderValue
-    {
-        
-        private System.Net.Http.Headers.RangeItemHeaderValue containedObject;
-        
-        public RangeItemHeaderValue(System.Net.Http.Headers.RangeItemHeaderValue containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RangeItemHeaderValue.From"/>
-        /// </summary>
-        public System.Nullable<long> From
-        {
-            get
-            {
-                return this.containedObject.From;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RangeItemHeaderValue.To"/>
-        /// </summary>
-        public System.Nullable<long> To
-        {
-            get
-            {
-                return this.containedObject.To;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RangeItemHeaderValue.ToString"/>
-        /// </summary>
-        public override string ToString()
-        {
-            return this.containedObject.ToString();
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RangeItemHeaderValue.Equals"/>
-        /// </summary>
-        public override bool Equals(object obj)
-        {
-            return this.containedObject.Equals(obj);
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RangeItemHeaderValue.GetHashCode"/>
-        /// </summary>
-        public override int GetHashCode()
-        {
-            return this.containedObject.GetHashCode();
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="IRangeItemHeaderValue" />
+	/// </summary>
+	public sealed partial class RangeItemHeaderValue : IRangeItemHeaderValue
+	{
+
+		private System.Net.Http.Headers.RangeItemHeaderValue containedObject;
+
+		public RangeItemHeaderValue(System.Net.Http.Headers.RangeItemHeaderValue containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RangeItemHeaderValue.From"/>
+		/// </summary>
+		public System.Nullable<long> From
+		{
+			get
+			{
+				return this.containedObject.From;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RangeItemHeaderValue.To"/>
+		/// </summary>
+		public System.Nullable<long> To
+		{
+			get
+			{
+				return this.containedObject.To;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RangeItemHeaderValue.ToString"/>
+		/// </summary>
+		public override string ToString()
+		{
+			return this.containedObject.ToString();
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RangeItemHeaderValue.Equals"/>
+		/// </summary>
+		public override bool Equals(object obj)
+		{
+			return this.containedObject.Equals(obj);
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RangeItemHeaderValue.GetHashCode"/>
+		/// </summary>
+		public override int GetHashCode()
+		{
+			return this.containedObject.GetHashCode();
+		}
+	}
 }

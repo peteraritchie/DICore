@@ -13,52 +13,52 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// An interface to model an abstraction of <see cref="System.Net.Http.Headers.ContentRangeHeaderValue" />
-    /// </summary>
-    public interface IContentRangeHeaderValue
+
+
+	/// <summary>
+	/// An interface to model an abstraction of <see cref="System.Net.Http.Headers.ContentRangeHeaderValue" />
+	/// </summary>
+	public interface IContentRangeHeaderValue
 #if !NETSTANDARD1_0 && !NETSTANDARD1_1 && !NETSTANDARD1_2 && !NETSTANDARD1_3 && !NETSTANDARD1_4 && !NETSTANDARD1_5 && !NETSTANDARD1_6
         : System.ICloneable
 #endif
 	{
 
-	string Unit
-        {
-            get;
-            set;
-        }
-        
-        System.Nullable<long> From
-        {
-            get;
-        }
-        
-        System.Nullable<long> To
-        {
-            get;
-        }
-        
-        System.Nullable<long> Length
-        {
-            get;
-        }
-        
-        bool HasLength
-        {
-            get;
-        }
-        
-        bool HasRange
-        {
-            get;
-        }
-        
-        bool Equals(object obj);
-        
-        int GetHashCode();
-        
-        string ToString();
-    }
+		string Unit
+		{
+			get;
+			set;
+		}
+
+		System.Nullable<long> From
+		{
+			get;
+		}
+
+		System.Nullable<long> To
+		{
+			get;
+		}
+
+		System.Nullable<long> Length
+		{
+			get;
+		}
+
+		bool HasLength
+		{
+			get;
+		}
+
+		bool HasRange
+		{
+			get;
+		}
+
+		bool Equals(object obj);
+
+		int GetHashCode();
+
+		string ToString();
+	}
 }

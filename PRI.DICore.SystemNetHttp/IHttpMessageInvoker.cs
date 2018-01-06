@@ -13,14 +13,14 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// An interface to model an abstraction of <see cref="System.Net.Http.HttpMessageInvoker" />
-    /// </summary>
-    public interface IHttpMessageInvoker : System.IDisposable
-    {
-        
-        System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage> SendAsync(System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken);
-    }
+
+
+	/// <summary>
+	/// An interface to model an abstraction of <see cref="System.Net.Http.HttpMessageInvoker" />
+	/// </summary>
+	public interface IHttpMessageInvoker : System.IDisposable
+	{
+
+		System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage> SendAsync(System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken);
+	}
 }

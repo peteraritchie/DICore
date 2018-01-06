@@ -13,58 +13,58 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="INameValueWithParametersHeaderValue" />
-    /// </summary>
-    public sealed partial class NameValueWithParametersHeaderValue : INameValueWithParametersHeaderValue
-    {
-        
-        private System.Net.Http.Headers.NameValueWithParametersHeaderValue containedObject;
-        
-        public NameValueWithParametersHeaderValue(System.Net.Http.Headers.NameValueWithParametersHeaderValue containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.NameValueWithParametersHeaderValue.Parameters"/>
-        /// </summary>
-        public System.Collections.Generic.ICollection<System.Net.Http.Headers.NameValueHeaderValue> Parameters
-        {
-            get
-            {
-                return this.containedObject.Parameters;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.NameValueWithParametersHeaderValue.Equals"/>
-        /// </summary>
-        public override bool Equals(object obj)
-        {
-            return this.containedObject.Equals(obj);
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.NameValueWithParametersHeaderValue.GetHashCode"/>
-        /// </summary>
-        public override int GetHashCode()
-        {
-            return this.containedObject.GetHashCode();
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.NameValueWithParametersHeaderValue.ToString"/>
-        /// </summary>
-        public override string ToString()
-        {
-            return this.containedObject.ToString();
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="INameValueWithParametersHeaderValue" />
+	/// </summary>
+	public sealed partial class NameValueWithParametersHeaderValue : INameValueWithParametersHeaderValue
+	{
+
+		private System.Net.Http.Headers.NameValueWithParametersHeaderValue containedObject;
+
+		public NameValueWithParametersHeaderValue(System.Net.Http.Headers.NameValueWithParametersHeaderValue containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.NameValueWithParametersHeaderValue.Parameters"/>
+		/// </summary>
+		public System.Collections.Generic.ICollection<System.Net.Http.Headers.NameValueHeaderValue> Parameters
+		{
+			get
+			{
+				return this.containedObject.Parameters;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.NameValueWithParametersHeaderValue.Equals"/>
+		/// </summary>
+		public override bool Equals(object obj)
+		{
+			return this.containedObject.Equals(obj);
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.NameValueWithParametersHeaderValue.GetHashCode"/>
+		/// </summary>
+		public override int GetHashCode()
+		{
+			return this.containedObject.GetHashCode();
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.NameValueWithParametersHeaderValue.ToString"/>
+		/// </summary>
+		public override string ToString()
+		{
+			return this.containedObject.ToString();
+		}
+	}
 }

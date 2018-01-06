@@ -13,144 +13,144 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="IHttpResponseMessage" />
-    /// </summary>
-    public sealed partial class HttpResponseMessage : IHttpResponseMessage
-    {
-        
-        private System.Net.Http.HttpResponseMessage containedObject;
-        
-        public HttpResponseMessage(System.Net.Http.HttpResponseMessage containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.HttpResponseMessage.Version"/>
-        /// </summary>
-        public System.Version Version
-        {
-            get
-            {
-                return this.containedObject.Version;
-            }
-            set
-            {
-                this.containedObject.Version = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.HttpResponseMessage.Content"/>
-        /// </summary>
-        public System.Net.Http.HttpContent Content
-        {
-            get
-            {
-                return this.containedObject.Content;
-            }
-            set
-            {
-                this.containedObject.Content = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.HttpResponseMessage.StatusCode"/>
-        /// </summary>
-        public System.Net.HttpStatusCode StatusCode
-        {
-            get
-            {
-                return this.containedObject.StatusCode;
-            }
-            set
-            {
-                this.containedObject.StatusCode = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.HttpResponseMessage.ReasonPhrase"/>
-        /// </summary>
-        public string ReasonPhrase
-        {
-            get
-            {
-                return this.containedObject.ReasonPhrase;
-            }
-            set
-            {
-                this.containedObject.ReasonPhrase = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.HttpResponseMessage.Headers"/>
-        /// </summary>
-        public System.Net.Http.Headers.HttpResponseHeaders Headers
-        {
-            get
-            {
-                return this.containedObject.Headers;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.HttpResponseMessage.RequestMessage"/>
-        /// </summary>
-        public System.Net.Http.HttpRequestMessage RequestMessage
-        {
-            get
-            {
-                return this.containedObject.RequestMessage;
-            }
-            set
-            {
-                this.containedObject.RequestMessage = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.HttpResponseMessage.IsSuccessStatusCode"/>
-        /// </summary>
-        public bool IsSuccessStatusCode
-        {
-            get
-            {
-                return this.containedObject.IsSuccessStatusCode;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode"/>
-        /// </summary>
-        public System.Net.Http.HttpResponseMessage EnsureSuccessStatusCode()
-        {
-            return this.containedObject.EnsureSuccessStatusCode();
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.HttpResponseMessage.ToString"/>
-        /// </summary>
-        public override string ToString()
-        {
-            return this.containedObject.ToString();
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.HttpResponseMessage.Dispose"/>
-        /// </summary>
-        public void Dispose()
-        {
-            this.containedObject.Dispose();
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="IHttpResponseMessage" />
+	/// </summary>
+	public sealed partial class HttpResponseMessage : IHttpResponseMessage
+	{
+
+		private System.Net.Http.HttpResponseMessage containedObject;
+
+		public HttpResponseMessage(System.Net.Http.HttpResponseMessage containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.HttpResponseMessage.Version"/>
+		/// </summary>
+		public System.Version Version
+		{
+			get
+			{
+				return this.containedObject.Version;
+			}
+			set
+			{
+				this.containedObject.Version = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.HttpResponseMessage.Content"/>
+		/// </summary>
+		public System.Net.Http.HttpContent Content
+		{
+			get
+			{
+				return this.containedObject.Content;
+			}
+			set
+			{
+				this.containedObject.Content = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.HttpResponseMessage.StatusCode"/>
+		/// </summary>
+		public System.Net.HttpStatusCode StatusCode
+		{
+			get
+			{
+				return this.containedObject.StatusCode;
+			}
+			set
+			{
+				this.containedObject.StatusCode = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.HttpResponseMessage.ReasonPhrase"/>
+		/// </summary>
+		public string ReasonPhrase
+		{
+			get
+			{
+				return this.containedObject.ReasonPhrase;
+			}
+			set
+			{
+				this.containedObject.ReasonPhrase = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.HttpResponseMessage.Headers"/>
+		/// </summary>
+		public System.Net.Http.Headers.HttpResponseHeaders Headers
+		{
+			get
+			{
+				return this.containedObject.Headers;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.HttpResponseMessage.RequestMessage"/>
+		/// </summary>
+		public System.Net.Http.HttpRequestMessage RequestMessage
+		{
+			get
+			{
+				return this.containedObject.RequestMessage;
+			}
+			set
+			{
+				this.containedObject.RequestMessage = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.HttpResponseMessage.IsSuccessStatusCode"/>
+		/// </summary>
+		public bool IsSuccessStatusCode
+		{
+			get
+			{
+				return this.containedObject.IsSuccessStatusCode;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode"/>
+		/// </summary>
+		public System.Net.Http.HttpResponseMessage EnsureSuccessStatusCode()
+		{
+			return this.containedObject.EnsureSuccessStatusCode();
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.HttpResponseMessage.ToString"/>
+		/// </summary>
+		public override string ToString()
+		{
+			return this.containedObject.ToString();
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.HttpResponseMessage.Dispose"/>
+		/// </summary>
+		public void Dispose()
+		{
+			this.containedObject.Dispose();
+		}
+	}
 }

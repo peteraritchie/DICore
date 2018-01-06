@@ -19,8 +19,8 @@ namespace PRI.DICore
 			this.compare = compare;
 		}
 
-		public FuncComparer(Func<T,T,int> compare)
-			: this((Comparison<T>)((x, y) => compare(x, y)))
+		public FuncComparer(Func<T, T, int> compare)
+			: this((Comparison<T>) ((x, y) => compare(x, y)))
 		{
 		}
 

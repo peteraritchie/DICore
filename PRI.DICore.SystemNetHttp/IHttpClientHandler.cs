@@ -13,99 +13,99 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// An interface to model an abstraction of <see cref="System.Net.Http.HttpClientHandler" />
-    /// </summary>
-    public interface IHttpClientHandler : System.IDisposable
-    {
-        
-        bool SupportsAutomaticDecompression
-        {
-            get;
-        }
-        
-        bool SupportsProxy
-        {
-            get;
-        }
-        
-        bool SupportsRedirectConfiguration
-        {
-            get;
-        }
-        
-        bool UseCookies
-        {
-            get;
-            set;
-        }
-        
-        System.Net.CookieContainer CookieContainer
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.ClientCertificateOption ClientCertificateOptions
-        {
-            get;
-            set;
-        }
-        
-        System.Net.DecompressionMethods AutomaticDecompression
-        {
-            get;
-            set;
-        }
-        
-        bool UseProxy
-        {
-            get;
-            set;
-        }
-        
-        System.Net.IWebProxy Proxy
-        {
-            get;
-            set;
-        }
-        
-        bool PreAuthenticate
-        {
-            get;
-            set;
-        }
-        
-        bool UseDefaultCredentials
-        {
-            get;
-            set;
-        }
-        
-        System.Net.ICredentials Credentials
-        {
-            get;
-            set;
-        }
-        
-        bool AllowAutoRedirect
-        {
-            get;
-            set;
-        }
-        
-        int MaxAutomaticRedirections
-        {
-            get;
-            set;
-        }
-        
-        long MaxRequestContentBufferSize
-        {
-            get;
-            set;
-        }
-    }
+
+
+	/// <summary>
+	/// An interface to model an abstraction of <see cref="System.Net.Http.HttpClientHandler" />
+	/// </summary>
+	public interface IHttpClientHandler : System.IDisposable
+	{
+
+		bool SupportsAutomaticDecompression
+		{
+			get;
+		}
+
+		bool SupportsProxy
+		{
+			get;
+		}
+
+		bool SupportsRedirectConfiguration
+		{
+			get;
+		}
+
+		bool UseCookies
+		{
+			get;
+			set;
+		}
+
+		System.Net.CookieContainer CookieContainer
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.ClientCertificateOption ClientCertificateOptions
+		{
+			get;
+			set;
+		}
+
+		System.Net.DecompressionMethods AutomaticDecompression
+		{
+			get;
+			set;
+		}
+
+		bool UseProxy
+		{
+			get;
+			set;
+		}
+
+		System.Net.IWebProxy Proxy
+		{
+			get;
+			set;
+		}
+
+		bool PreAuthenticate
+		{
+			get;
+			set;
+		}
+
+		bool UseDefaultCredentials
+		{
+			get;
+			set;
+		}
+
+		System.Net.ICredentials Credentials
+		{
+			get;
+			set;
+		}
+
+		bool AllowAutoRedirect
+		{
+			get;
+			set;
+		}
+
+		int MaxAutomaticRedirections
+		{
+			get;
+			set;
+		}
+
+		long MaxRequestContentBufferSize
+		{
+			get;
+			set;
+		}
+	}
 }

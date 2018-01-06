@@ -13,73 +13,73 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="INameValueHeaderValue" />
-    /// </summary>
-    public sealed partial class NameValueHeaderValue : INameValueHeaderValue
-    {
-        
-        private System.Net.Http.Headers.NameValueHeaderValue containedObject;
-        
-        public NameValueHeaderValue(System.Net.Http.Headers.NameValueHeaderValue containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.NameValueHeaderValue.Name"/>
-        /// </summary>
-        public string Name
-        {
-            get
-            {
-                return this.containedObject.Name;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.NameValueHeaderValue.Value"/>
-        /// </summary>
-        public string Value
-        {
-            get
-            {
-                return this.containedObject.Value;
-            }
-            set
-            {
-                this.containedObject.Value = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.NameValueHeaderValue.GetHashCode"/>
-        /// </summary>
-        public override int GetHashCode()
-        {
-            return this.containedObject.GetHashCode();
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.NameValueHeaderValue.Equals"/>
-        /// </summary>
-        public override bool Equals(object obj)
-        {
-            return this.containedObject.Equals(obj);
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.NameValueHeaderValue.ToString"/>
-        /// </summary>
-        public override string ToString()
-        {
-            return this.containedObject.ToString();
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="INameValueHeaderValue" />
+	/// </summary>
+	public sealed partial class NameValueHeaderValue : INameValueHeaderValue
+	{
+
+		private System.Net.Http.Headers.NameValueHeaderValue containedObject;
+
+		public NameValueHeaderValue(System.Net.Http.Headers.NameValueHeaderValue containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.NameValueHeaderValue.Name"/>
+		/// </summary>
+		public string Name
+		{
+			get
+			{
+				return this.containedObject.Name;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.NameValueHeaderValue.Value"/>
+		/// </summary>
+		public string Value
+		{
+			get
+			{
+				return this.containedObject.Value;
+			}
+			set
+			{
+				this.containedObject.Value = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.NameValueHeaderValue.GetHashCode"/>
+		/// </summary>
+		public override int GetHashCode()
+		{
+			return this.containedObject.GetHashCode();
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.NameValueHeaderValue.Equals"/>
+		/// </summary>
+		public override bool Equals(object obj)
+		{
+			return this.containedObject.Equals(obj);
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.NameValueHeaderValue.ToString"/>
+		/// </summary>
+		public override string ToString()
+		{
+			return this.containedObject.ToString();
+		}
+	}
 }

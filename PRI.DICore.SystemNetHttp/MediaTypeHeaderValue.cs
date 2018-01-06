@@ -13,88 +13,88 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="IMediaTypeHeaderValue" />
-    /// </summary>
-    public sealed partial class MediaTypeHeaderValue : IMediaTypeHeaderValue
-    {
-        
-        private System.Net.Http.Headers.MediaTypeHeaderValue containedObject;
-        
-        public MediaTypeHeaderValue(System.Net.Http.Headers.MediaTypeHeaderValue containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.MediaTypeHeaderValue.CharSet"/>
-        /// </summary>
-        public string CharSet
-        {
-            get
-            {
-                return this.containedObject.CharSet;
-            }
-            set
-            {
-                this.containedObject.CharSet = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.MediaTypeHeaderValue.Parameters"/>
-        /// </summary>
-        public System.Collections.Generic.ICollection<System.Net.Http.Headers.NameValueHeaderValue> Parameters
-        {
-            get
-            {
-                return this.containedObject.Parameters;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.MediaTypeHeaderValue.MediaType"/>
-        /// </summary>
-        public string MediaType
-        {
-            get
-            {
-                return this.containedObject.MediaType;
-            }
-            set
-            {
-                this.containedObject.MediaType = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.MediaTypeHeaderValue.ToString"/>
-        /// </summary>
-        public override string ToString()
-        {
-            return this.containedObject.ToString();
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.MediaTypeHeaderValue.Equals"/>
-        /// </summary>
-        public override bool Equals(object obj)
-        {
-            return this.containedObject.Equals(obj);
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.MediaTypeHeaderValue.GetHashCode"/>
-        /// </summary>
-        public override int GetHashCode()
-        {
-            return this.containedObject.GetHashCode();
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="IMediaTypeHeaderValue" />
+	/// </summary>
+	public sealed partial class MediaTypeHeaderValue : IMediaTypeHeaderValue
+	{
+
+		private System.Net.Http.Headers.MediaTypeHeaderValue containedObject;
+
+		public MediaTypeHeaderValue(System.Net.Http.Headers.MediaTypeHeaderValue containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.MediaTypeHeaderValue.CharSet"/>
+		/// </summary>
+		public string CharSet
+		{
+			get
+			{
+				return this.containedObject.CharSet;
+			}
+			set
+			{
+				this.containedObject.CharSet = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.MediaTypeHeaderValue.Parameters"/>
+		/// </summary>
+		public System.Collections.Generic.ICollection<System.Net.Http.Headers.NameValueHeaderValue> Parameters
+		{
+			get
+			{
+				return this.containedObject.Parameters;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.MediaTypeHeaderValue.MediaType"/>
+		/// </summary>
+		public string MediaType
+		{
+			get
+			{
+				return this.containedObject.MediaType;
+			}
+			set
+			{
+				this.containedObject.MediaType = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.MediaTypeHeaderValue.ToString"/>
+		/// </summary>
+		public override string ToString()
+		{
+			return this.containedObject.ToString();
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.MediaTypeHeaderValue.Equals"/>
+		/// </summary>
+		public override bool Equals(object obj)
+		{
+			return this.containedObject.Equals(obj);
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.MediaTypeHeaderValue.GetHashCode"/>
+		/// </summary>
+		public override int GetHashCode()
+		{
+			return this.containedObject.GetHashCode();
+		}
+	}
 }

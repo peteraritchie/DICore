@@ -13,178 +13,178 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="IContentDispositionHeaderValue" />
-    /// </summary>
-    public sealed partial class ContentDispositionHeaderValue : IContentDispositionHeaderValue
-    {
-        
-        private System.Net.Http.Headers.ContentDispositionHeaderValue containedObject;
-        
-        public ContentDispositionHeaderValue(System.Net.Http.Headers.ContentDispositionHeaderValue containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.DispositionType"/>
-        /// </summary>
-        public string DispositionType
-        {
-            get
-            {
-                return this.containedObject.DispositionType;
-            }
-            set
-            {
-                this.containedObject.DispositionType = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.Parameters"/>
-        /// </summary>
-        public System.Collections.Generic.ICollection<System.Net.Http.Headers.NameValueHeaderValue> Parameters
-        {
-            get
-            {
-                return this.containedObject.Parameters;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.Name"/>
-        /// </summary>
-        public string Name
-        {
-            get
-            {
-                return this.containedObject.Name;
-            }
-            set
-            {
-                this.containedObject.Name = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.FileName"/>
-        /// </summary>
-        public string FileName
-        {
-            get
-            {
-                return this.containedObject.FileName;
-            }
-            set
-            {
-                this.containedObject.FileName = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar"/>
-        /// </summary>
-        public string FileNameStar
-        {
-            get
-            {
-                return this.containedObject.FileNameStar;
-            }
-            set
-            {
-                this.containedObject.FileNameStar = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.CreationDate"/>
-        /// </summary>
-        public System.Nullable<System.DateTimeOffset> CreationDate
-        {
-            get
-            {
-                return this.containedObject.CreationDate;
-            }
-            set
-            {
-                this.containedObject.CreationDate = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.ModificationDate"/>
-        /// </summary>
-        public System.Nullable<System.DateTimeOffset> ModificationDate
-        {
-            get
-            {
-                return this.containedObject.ModificationDate;
-            }
-            set
-            {
-                this.containedObject.ModificationDate = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.ReadDate"/>
-        /// </summary>
-        public System.Nullable<System.DateTimeOffset> ReadDate
-        {
-            get
-            {
-                return this.containedObject.ReadDate;
-            }
-            set
-            {
-                this.containedObject.ReadDate = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.Size"/>
-        /// </summary>
-        public System.Nullable<long> Size
-        {
-            get
-            {
-                return this.containedObject.Size;
-            }
-            set
-            {
-                this.containedObject.Size = value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.ToString"/>
-        /// </summary>
-        public override string ToString()
-        {
-            return this.containedObject.ToString();
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.Equals"/>
-        /// </summary>
-        public override bool Equals(object obj)
-        {
-            return this.containedObject.Equals(obj);
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.GetHashCode"/>
-        /// </summary>
-        public override int GetHashCode()
-        {
-            return this.containedObject.GetHashCode();
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="IContentDispositionHeaderValue" />
+	/// </summary>
+	public sealed partial class ContentDispositionHeaderValue : IContentDispositionHeaderValue
+	{
+
+		private System.Net.Http.Headers.ContentDispositionHeaderValue containedObject;
+
+		public ContentDispositionHeaderValue(System.Net.Http.Headers.ContentDispositionHeaderValue containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.DispositionType"/>
+		/// </summary>
+		public string DispositionType
+		{
+			get
+			{
+				return this.containedObject.DispositionType;
+			}
+			set
+			{
+				this.containedObject.DispositionType = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.Parameters"/>
+		/// </summary>
+		public System.Collections.Generic.ICollection<System.Net.Http.Headers.NameValueHeaderValue> Parameters
+		{
+			get
+			{
+				return this.containedObject.Parameters;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.Name"/>
+		/// </summary>
+		public string Name
+		{
+			get
+			{
+				return this.containedObject.Name;
+			}
+			set
+			{
+				this.containedObject.Name = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.FileName"/>
+		/// </summary>
+		public string FileName
+		{
+			get
+			{
+				return this.containedObject.FileName;
+			}
+			set
+			{
+				this.containedObject.FileName = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar"/>
+		/// </summary>
+		public string FileNameStar
+		{
+			get
+			{
+				return this.containedObject.FileNameStar;
+			}
+			set
+			{
+				this.containedObject.FileNameStar = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.CreationDate"/>
+		/// </summary>
+		public System.Nullable<System.DateTimeOffset> CreationDate
+		{
+			get
+			{
+				return this.containedObject.CreationDate;
+			}
+			set
+			{
+				this.containedObject.CreationDate = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.ModificationDate"/>
+		/// </summary>
+		public System.Nullable<System.DateTimeOffset> ModificationDate
+		{
+			get
+			{
+				return this.containedObject.ModificationDate;
+			}
+			set
+			{
+				this.containedObject.ModificationDate = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.ReadDate"/>
+		/// </summary>
+		public System.Nullable<System.DateTimeOffset> ReadDate
+		{
+			get
+			{
+				return this.containedObject.ReadDate;
+			}
+			set
+			{
+				this.containedObject.ReadDate = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.Size"/>
+		/// </summary>
+		public System.Nullable<long> Size
+		{
+			get
+			{
+				return this.containedObject.Size;
+			}
+			set
+			{
+				this.containedObject.Size = value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.ToString"/>
+		/// </summary>
+		public override string ToString()
+		{
+			return this.containedObject.ToString();
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.Equals"/>
+		/// </summary>
+		public override bool Equals(object obj)
+		{
+			return this.containedObject.Equals(obj);
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue.GetHashCode"/>
+		/// </summary>
+		public override int GetHashCode()
+		{
+			return this.containedObject.GetHashCode();
+		}
+	}
 }

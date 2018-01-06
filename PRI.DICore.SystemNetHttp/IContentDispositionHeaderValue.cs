@@ -13,73 +13,73 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// An interface to model an abstraction of <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue" />
-    /// </summary>
-    public interface IContentDispositionHeaderValue
+
+
+	/// <summary>
+	/// An interface to model an abstraction of <see cref="System.Net.Http.Headers.ContentDispositionHeaderValue" />
+	/// </summary>
+	public interface IContentDispositionHeaderValue
 #if !NETSTANDARD1_0 && !NETSTANDARD1_1 && !NETSTANDARD1_2 && !NETSTANDARD1_3 && !NETSTANDARD1_4 && !NETSTANDARD1_5 && !NETSTANDARD1_6
         : System.ICloneable
 #endif
-    {
-        string DispositionType
-        {
-            get;
-            set;
-        }
-        
-        System.Collections.Generic.ICollection<System.Net.Http.Headers.NameValueHeaderValue> Parameters
-        {
-            get;
-        }
-        
-        string Name
-        {
-            get;
-            set;
-        }
-        
-        string FileName
-        {
-            get;
-            set;
-        }
-        
-        string FileNameStar
-        {
-            get;
-            set;
-        }
-        
-        System.Nullable<System.DateTimeOffset> CreationDate
-        {
-            get;
-            set;
-        }
-        
-        System.Nullable<System.DateTimeOffset> ModificationDate
-        {
-            get;
-            set;
-        }
-        
-        System.Nullable<System.DateTimeOffset> ReadDate
-        {
-            get;
-            set;
-        }
-        
-        System.Nullable<long> Size
-        {
-            get;
-            set;
-        }
-        
-        string ToString();
-        
-        bool Equals(object obj);
-        
-        int GetHashCode();
-    }
+	{
+		string DispositionType
+		{
+			get;
+			set;
+		}
+
+		System.Collections.Generic.ICollection<System.Net.Http.Headers.NameValueHeaderValue> Parameters
+		{
+			get;
+		}
+
+		string Name
+		{
+			get;
+			set;
+		}
+
+		string FileName
+		{
+			get;
+			set;
+		}
+
+		string FileNameStar
+		{
+			get;
+			set;
+		}
+
+		System.Nullable<System.DateTimeOffset> CreationDate
+		{
+			get;
+			set;
+		}
+
+		System.Nullable<System.DateTimeOffset> ModificationDate
+		{
+			get;
+			set;
+		}
+
+		System.Nullable<System.DateTimeOffset> ReadDate
+		{
+			get;
+			set;
+		}
+
+		System.Nullable<long> Size
+		{
+			get;
+			set;
+		}
+
+		string ToString();
+
+		bool Equals(object obj);
+
+		int GetHashCode();
+	}
 }

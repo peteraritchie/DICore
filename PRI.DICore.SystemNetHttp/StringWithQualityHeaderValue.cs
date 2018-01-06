@@ -13,69 +13,69 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="IStringWithQualityHeaderValue" />
-    /// </summary>
-    public sealed partial class StringWithQualityHeaderValue : IStringWithQualityHeaderValue
-    {
-        
-        private System.Net.Http.Headers.StringWithQualityHeaderValue containedObject;
-        
-        public StringWithQualityHeaderValue(System.Net.Http.Headers.StringWithQualityHeaderValue containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.StringWithQualityHeaderValue.Value"/>
-        /// </summary>
-        public string Value
-        {
-            get
-            {
-                return this.containedObject.Value;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.StringWithQualityHeaderValue.Quality"/>
-        /// </summary>
-        public System.Nullable<double> Quality
-        {
-            get
-            {
-                return this.containedObject.Quality;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.StringWithQualityHeaderValue.ToString"/>
-        /// </summary>
-        public override string ToString()
-        {
-            return this.containedObject.ToString();
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.StringWithQualityHeaderValue.Equals"/>
-        /// </summary>
-        public override bool Equals(object obj)
-        {
-            return this.containedObject.Equals(obj);
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.StringWithQualityHeaderValue.GetHashCode"/>
-        /// </summary>
-        public override int GetHashCode()
-        {
-            return this.containedObject.GetHashCode();
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="IStringWithQualityHeaderValue" />
+	/// </summary>
+	public sealed partial class StringWithQualityHeaderValue : IStringWithQualityHeaderValue
+	{
+
+		private System.Net.Http.Headers.StringWithQualityHeaderValue containedObject;
+
+		public StringWithQualityHeaderValue(System.Net.Http.Headers.StringWithQualityHeaderValue containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.StringWithQualityHeaderValue.Value"/>
+		/// </summary>
+		public string Value
+		{
+			get
+			{
+				return this.containedObject.Value;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.StringWithQualityHeaderValue.Quality"/>
+		/// </summary>
+		public System.Nullable<double> Quality
+		{
+			get
+			{
+				return this.containedObject.Quality;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.StringWithQualityHeaderValue.ToString"/>
+		/// </summary>
+		public override string ToString()
+		{
+			return this.containedObject.ToString();
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.StringWithQualityHeaderValue.Equals"/>
+		/// </summary>
+		public override bool Equals(object obj)
+		{
+			return this.containedObject.Equals(obj);
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.StringWithQualityHeaderValue.GetHashCode"/>
+		/// </summary>
+		public override int GetHashCode()
+		{
+			return this.containedObject.GetHashCode();
+		}
+	}
 }

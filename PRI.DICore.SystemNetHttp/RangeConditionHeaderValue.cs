@@ -13,69 +13,69 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="IRangeConditionHeaderValue" />
-    /// </summary>
-    public sealed partial class RangeConditionHeaderValue : IRangeConditionHeaderValue
-    {
-        
-        private System.Net.Http.Headers.RangeConditionHeaderValue containedObject;
-        
-        public RangeConditionHeaderValue(System.Net.Http.Headers.RangeConditionHeaderValue containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RangeConditionHeaderValue.Date"/>
-        /// </summary>
-        public System.Nullable<System.DateTimeOffset> Date
-        {
-            get
-            {
-                return this.containedObject.Date;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RangeConditionHeaderValue.EntityTag"/>
-        /// </summary>
-        public System.Net.Http.Headers.EntityTagHeaderValue EntityTag
-        {
-            get
-            {
-                return this.containedObject.EntityTag;
-            }
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RangeConditionHeaderValue.ToString"/>
-        /// </summary>
-        public override string ToString()
-        {
-            return this.containedObject.ToString();
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RangeConditionHeaderValue.Equals"/>
-        /// </summary>
-        public override bool Equals(object obj)
-        {
-            return this.containedObject.Equals(obj);
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.Headers.RangeConditionHeaderValue.GetHashCode"/>
-        /// </summary>
-        public override int GetHashCode()
-        {
-            return this.containedObject.GetHashCode();
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="IRangeConditionHeaderValue" />
+	/// </summary>
+	public sealed partial class RangeConditionHeaderValue : IRangeConditionHeaderValue
+	{
+
+		private System.Net.Http.Headers.RangeConditionHeaderValue containedObject;
+
+		public RangeConditionHeaderValue(System.Net.Http.Headers.RangeConditionHeaderValue containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RangeConditionHeaderValue.Date"/>
+		/// </summary>
+		public System.Nullable<System.DateTimeOffset> Date
+		{
+			get
+			{
+				return this.containedObject.Date;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RangeConditionHeaderValue.EntityTag"/>
+		/// </summary>
+		public System.Net.Http.Headers.EntityTagHeaderValue EntityTag
+		{
+			get
+			{
+				return this.containedObject.EntityTag;
+			}
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RangeConditionHeaderValue.ToString"/>
+		/// </summary>
+		public override string ToString()
+		{
+			return this.containedObject.ToString();
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RangeConditionHeaderValue.Equals"/>
+		/// </summary>
+		public override bool Equals(object obj)
+		{
+			return this.containedObject.Equals(obj);
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.Headers.RangeConditionHeaderValue.GetHashCode"/>
+		/// </summary>
+		public override int GetHashCode()
+		{
+			return this.containedObject.GetHashCode();
+		}
+	}
 }

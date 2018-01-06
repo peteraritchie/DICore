@@ -13,18 +13,18 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// An interface to model an abstraction of <see cref="System.Net.Http.MultipartFormDataContent" />
-    /// </summary>
-    public interface IMultipartFormDataContent : System.IDisposable, System.Collections.Generic.IEnumerable<System.Net.Http.HttpContent>, System.Collections.IEnumerable
-    {
-        
-        void Add(System.Net.Http.HttpContent content);
-        
-        void Add(System.Net.Http.HttpContent content, string name);
-        
-        void Add(System.Net.Http.HttpContent content, string name, string fileName);
-    }
+
+
+	/// <summary>
+	/// An interface to model an abstraction of <see cref="System.Net.Http.MultipartFormDataContent" />
+	/// </summary>
+	public interface IMultipartFormDataContent : System.IDisposable, System.Collections.Generic.IEnumerable<System.Net.Http.HttpContent>, System.Collections.IEnumerable
+	{
+
+		void Add(System.Net.Http.HttpContent content);
+
+		void Add(System.Net.Http.HttpContent content, string name);
+
+		void Add(System.Net.Http.HttpContent content, string name, string fileName);
+	}
 }

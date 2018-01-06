@@ -13,56 +13,56 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// An interface to model an abstraction of <see cref="System.Net.Http.HttpResponseMessage" />
-    /// </summary>
-    public interface IHttpResponseMessage : System.IDisposable
-    {
-        
-        System.Version Version
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.HttpContent Content
-        {
-            get;
-            set;
-        }
-        
-        System.Net.HttpStatusCode StatusCode
-        {
-            get;
-            set;
-        }
-        
-        string ReasonPhrase
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.HttpResponseHeaders Headers
-        {
-            get;
-        }
-        
-        System.Net.Http.HttpRequestMessage RequestMessage
-        {
-            get;
-            set;
-        }
-        
-        bool IsSuccessStatusCode
-        {
-            get;
-        }
-        
-        System.Net.Http.HttpResponseMessage EnsureSuccessStatusCode();
-        
-        string ToString();
-    }
+
+
+	/// <summary>
+	/// An interface to model an abstraction of <see cref="System.Net.Http.HttpResponseMessage" />
+	/// </summary>
+	public interface IHttpResponseMessage : System.IDisposable
+	{
+
+		System.Version Version
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.HttpContent Content
+		{
+			get;
+			set;
+		}
+
+		System.Net.HttpStatusCode StatusCode
+		{
+			get;
+			set;
+		}
+
+		string ReasonPhrase
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.HttpResponseHeaders Headers
+		{
+			get;
+		}
+
+		System.Net.Http.HttpRequestMessage RequestMessage
+		{
+			get;
+			set;
+		}
+
+		bool IsSuccessStatusCode
+		{
+			get;
+		}
+
+		System.Net.Http.HttpResponseMessage EnsureSuccessStatusCode();
+
+		string ToString();
+	}
 }

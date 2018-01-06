@@ -13,41 +13,41 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// An interface to model an abstraction of <see cref="System.Net.Http.Headers.WarningHeaderValue" />
-    /// </summary>
-    public interface IWarningHeaderValue
+
+
+	/// <summary>
+	/// An interface to model an abstraction of <see cref="System.Net.Http.Headers.WarningHeaderValue" />
+	/// </summary>
+	public interface IWarningHeaderValue
 #if !NETSTANDARD1_0 && !NETSTANDARD1_1 && !NETSTANDARD1_2 && !NETSTANDARD1_3 && !NETSTANDARD1_4 && !NETSTANDARD1_5 && !NETSTANDARD1_6
         : System.ICloneable
 #endif
 	{
 
 		int Code
-        {
-            get;
-        }
-        
-        string Agent
-        {
-            get;
-        }
-        
-        string Text
-        {
-            get;
-        }
-        
-        System.Nullable<System.DateTimeOffset> Date
-        {
-            get;
-        }
-        
-        string ToString();
-        
-        bool Equals(object obj);
-        
-        int GetHashCode();
-    }
+		{
+			get;
+		}
+
+		string Agent
+		{
+			get;
+		}
+
+		string Text
+		{
+			get;
+		}
+
+		System.Nullable<System.DateTimeOffset> Date
+		{
+			get;
+		}
+
+		string ToString();
+
+		bool Equals(object obj);
+
+		int GetHashCode();
+	}
 }

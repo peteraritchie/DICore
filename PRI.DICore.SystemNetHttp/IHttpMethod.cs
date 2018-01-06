@@ -13,23 +13,23 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// An interface to model an abstraction of <see cref="System.Net.Http.HttpMethod" />
-    /// </summary>
-    public interface IHttpMethod : System.IEquatable<System.Net.Http.HttpMethod>
-    {
-        
-        string Method
-        {
-            get;
-        }
-        
-        bool Equals(object obj);
-        
-        int GetHashCode();
-        
-        string ToString();
-    }
+
+
+	/// <summary>
+	/// An interface to model an abstraction of <see cref="System.Net.Http.HttpMethod" />
+	/// </summary>
+	public interface IHttpMethod : System.IEquatable<System.Net.Http.HttpMethod>
+	{
+
+		string Method
+		{
+			get;
+		}
+
+		bool Equals(object obj);
+
+		int GetHashCode();
+
+		string ToString();
+	}
 }

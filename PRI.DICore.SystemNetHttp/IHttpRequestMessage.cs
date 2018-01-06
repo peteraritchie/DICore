@@ -13,48 +13,48 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// An interface to model an abstraction of <see cref="System.Net.Http.HttpRequestMessage" />
-    /// </summary>
-    public interface IHttpRequestMessage : System.IDisposable
-    {
-        
-        System.Version Version
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.HttpContent Content
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.HttpMethod Method
-        {
-            get;
-            set;
-        }
-        
-        System.Uri RequestUri
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.HttpRequestHeaders Headers
-        {
-            get;
-        }
-        
-        System.Collections.Generic.IDictionary<string, object> Properties
-        {
-            get;
-        }
-        
-        string ToString();
-    }
+
+
+	/// <summary>
+	/// An interface to model an abstraction of <see cref="System.Net.Http.HttpRequestMessage" />
+	/// </summary>
+	public interface IHttpRequestMessage : System.IDisposable
+	{
+
+		System.Version Version
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.HttpContent Content
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.HttpMethod Method
+		{
+			get;
+			set;
+		}
+
+		System.Uri RequestUri
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.HttpRequestHeaders Headers
+		{
+			get;
+		}
+
+		System.Collections.Generic.IDictionary<string, object> Properties
+		{
+			get;
+		}
+
+		string ToString();
+	}
 }

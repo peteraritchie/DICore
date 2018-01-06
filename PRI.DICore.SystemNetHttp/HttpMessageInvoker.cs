@@ -13,39 +13,39 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// Default implementation of <sealso cref="IHttpMessageInvoker" />
-    /// </summary>
-    public sealed partial class HttpMessageInvoker : IHttpMessageInvoker
-    {
-        
-        private System.Net.Http.HttpMessageInvoker containedObject;
-        
-        public HttpMessageInvoker(System.Net.Http.HttpMessageInvoker containedObject)
-        {
-            if ((containedObject == null))
-            {
-                throw new System.ArgumentNullException("containedObject");
-            }
-            this.containedObject = containedObject;
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.HttpMessageInvoker.SendAsync"/>
-        /// </summary>
-        public System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage> SendAsync(System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken)
-        {
-            return this.containedObject.SendAsync(request, cancellationToken);
-        }
-        
-        /// <summary>
-        /// <see cref="System.Net.Http.HttpMessageInvoker.Dispose"/>
-        /// </summary>
-        public void Dispose()
-        {
-            this.containedObject.Dispose();
-        }
-    }
+
+
+	/// <summary>
+	/// Default implementation of <sealso cref="IHttpMessageInvoker" />
+	/// </summary>
+	public sealed partial class HttpMessageInvoker : IHttpMessageInvoker
+	{
+
+		private System.Net.Http.HttpMessageInvoker containedObject;
+
+		public HttpMessageInvoker(System.Net.Http.HttpMessageInvoker containedObject)
+		{
+			if ((containedObject == null))
+			{
+				throw new System.ArgumentNullException("containedObject");
+			}
+			this.containedObject = containedObject;
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.HttpMessageInvoker.SendAsync"/>
+		/// </summary>
+		public System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage> SendAsync(System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken)
+		{
+			return this.containedObject.SendAsync(request, cancellationToken);
+		}
+
+		/// <summary>
+		/// <see cref="System.Net.Http.HttpMessageInvoker.Dispose"/>
+		/// </summary>
+		public void Dispose()
+		{
+			this.containedObject.Dispose();
+		}
+	}
 }

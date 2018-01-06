@@ -13,182 +13,182 @@ using System;
 
 namespace PRI.DICore.SystemNetHttp
 {
-    
-    
-    /// <summary>
-    /// An interface to model an abstraction of <see cref="System.Net.Http.Headers.HttpRequestHeaders" />
-    /// </summary>
-    public interface IHttpRequestHeaders : System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, System.Collections.Generic.IEnumerable<string>>>, System.Collections.IEnumerable
-    {
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.MediaTypeWithQualityHeaderValue> Accept
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.StringWithQualityHeaderValue> AcceptCharset
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.StringWithQualityHeaderValue> AcceptEncoding
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.StringWithQualityHeaderValue> AcceptLanguage
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.AuthenticationHeaderValue Authorization
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.NameValueWithParametersHeaderValue> Expect
-        {
-            get;
-        }
-        
-        System.Nullable<bool> ExpectContinue
-        {
-            get;
-            set;
-        }
-        
-        string From
-        {
-            get;
-            set;
-        }
-        
-        string Host
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.EntityTagHeaderValue> IfMatch
-        {
-            get;
-        }
-        
-        System.Nullable<System.DateTimeOffset> IfModifiedSince
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.EntityTagHeaderValue> IfNoneMatch
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.RangeConditionHeaderValue IfRange
-        {
-            get;
-            set;
-        }
-        
-        System.Nullable<System.DateTimeOffset> IfUnmodifiedSince
-        {
-            get;
-            set;
-        }
-        
-        System.Nullable<int> MaxForwards
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.AuthenticationHeaderValue ProxyAuthorization
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.RangeHeaderValue Range
-        {
-            get;
-            set;
-        }
-        
-        System.Uri Referrer
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.TransferCodingWithQualityHeaderValue> TE
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductInfoHeaderValue> UserAgent
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.CacheControlHeaderValue CacheControl
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<string> Connection
-        {
-            get;
-        }
-        
-        System.Nullable<bool> ConnectionClose
-        {
-            get;
-            set;
-        }
-        
-        System.Nullable<System.DateTimeOffset> Date
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.NameValueHeaderValue> Pragma
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<string> Trailer
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.TransferCodingHeaderValue> TransferEncoding
-        {
-            get;
-        }
-        
-        System.Nullable<bool> TransferEncodingChunked
-        {
-            get;
-            set;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductHeaderValue> Upgrade
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ViaHeaderValue> Via
-        {
-            get;
-        }
-        
-        System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.WarningHeaderValue> Warning
-        {
-            get;
-        }
-    }
+
+
+	/// <summary>
+	/// An interface to model an abstraction of <see cref="System.Net.Http.Headers.HttpRequestHeaders" />
+	/// </summary>
+	public interface IHttpRequestHeaders : System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, System.Collections.Generic.IEnumerable<string>>>, System.Collections.IEnumerable
+	{
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.MediaTypeWithQualityHeaderValue> Accept
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.StringWithQualityHeaderValue> AcceptCharset
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.StringWithQualityHeaderValue> AcceptEncoding
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.StringWithQualityHeaderValue> AcceptLanguage
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.AuthenticationHeaderValue Authorization
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.NameValueWithParametersHeaderValue> Expect
+		{
+			get;
+		}
+
+		System.Nullable<bool> ExpectContinue
+		{
+			get;
+			set;
+		}
+
+		string From
+		{
+			get;
+			set;
+		}
+
+		string Host
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.EntityTagHeaderValue> IfMatch
+		{
+			get;
+		}
+
+		System.Nullable<System.DateTimeOffset> IfModifiedSince
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.EntityTagHeaderValue> IfNoneMatch
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.RangeConditionHeaderValue IfRange
+		{
+			get;
+			set;
+		}
+
+		System.Nullable<System.DateTimeOffset> IfUnmodifiedSince
+		{
+			get;
+			set;
+		}
+
+		System.Nullable<int> MaxForwards
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.AuthenticationHeaderValue ProxyAuthorization
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.RangeHeaderValue Range
+		{
+			get;
+			set;
+		}
+
+		System.Uri Referrer
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.TransferCodingWithQualityHeaderValue> TE
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductInfoHeaderValue> UserAgent
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.CacheControlHeaderValue CacheControl
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<string> Connection
+		{
+			get;
+		}
+
+		System.Nullable<bool> ConnectionClose
+		{
+			get;
+			set;
+		}
+
+		System.Nullable<System.DateTimeOffset> Date
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.NameValueHeaderValue> Pragma
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<string> Trailer
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.TransferCodingHeaderValue> TransferEncoding
+		{
+			get;
+		}
+
+		System.Nullable<bool> TransferEncodingChunked
+		{
+			get;
+			set;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ProductHeaderValue> Upgrade
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.ViaHeaderValue> Via
+		{
+			get;
+		}
+
+		System.Net.Http.Headers.HttpHeaderValueCollection<System.Net.Http.Headers.WarningHeaderValue> Warning
+		{
+			get;
+		}
+	}
 }
