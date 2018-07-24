@@ -1,7 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net452;netstandard1.3</TargetFrameworks>
+    <TargetFrameworks>netstandard1.1;net45</TargetFrameworks>
       <PackageId>PRI.DICore.SystemNetHttp</PackageId>
       <Authors>Peter Ritchie</Authors>
       <Description>A library to facilitate Dependency Inversion with System.Net.Http</Description>
@@ -13,6 +13,8 @@
       <PackageReleaseNotes>Support for .NET Standard</PackageReleaseNotes>
       <PackageTags>dependency inversion system.net.http</PackageTags>
       <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+      <AssemblyName>PRI.DICore.SystemNetHttp</AssemblyName>
+      <RootNamespace>PRI.DICore.SystemNetHttp</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -47,15 +49,4 @@
   <ItemGroup>
     <PackageReference Include="System.Net.Http" Version="4.3.3" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Properties\" />
-  </ItemGroup>
-
-  <PropertyGroup>
-    <!--<NuGetTargetMoniker>.NETStandard,Version=v1.3</NuGetTargetMoniker>-->
-    <AssemblyName>PRI.DICore.SystemNetHttp</AssemblyName>
-    <RootNamespace>PRI.DICore.SystemNetHttp</RootNamespace>
-    <Version>0.2.0-beta</Version>
-  </PropertyGroup>
 </Project>
